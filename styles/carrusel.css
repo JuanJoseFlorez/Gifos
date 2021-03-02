@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box
+}
+@-ms-viewport{width:auto!important};
+
+html, body {
+    width: 100%;
+    overflow: hidden;
+}
+.glider-contain {
+    width: 90%;
+    max-width: 997px;
+    margin: 0 auto;
+}
+.glider-slide {
+    min-height: 150px;
+}
+.glider-slide img {
+    width: 100%;
+}

@@ -1,0 +1,96 @@
+body{
+    hr{
+        height: 5px;
+        width: 100%;
+    }
+}
+header{
+    padding: 7% 7%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    nav{
+        .menu{
+            
+            img{
+                margin-top: 13px;
+            }
+
+            ul{
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                margin-top: 12%;                
+                width: 100%;
+                position: absolute;
+                top: 45px;
+                right: 0;
+                overflow: hidden;
+                list-style: none;
+                background: $purple-gifos;
+                filter:alpha(opacity=90);
+                -moz-opacity:.90;
+                opacity:.90;
+                height: 0px;
+                transition: height 0.5s ease;
+                hr{
+                    height: 1px;
+                    width: 40px;
+                    text-align: center;
+                    display: flex;
+                    filter:alpha(opacity=90);
+                    -moz-opacity:.90;
+                    opacity:.90;
+                }
+                li{
+                    position: relative;
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    width: 100%;
+                    &:hover{
+                        background:blue;
+                    }
+                    a{
+                        position: relative;
+                        text-decoration: none;
+                        color: rgb(255, 255, 255);
+                        padding: 16px 5%;
+                        line-height: 28px;
+                        display: flex;
+                        font-weight: 500;
+                        margin: auto;
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+
+                }
+            }
+            input[type="checkbox"]{
+                &:checked ~ ul{
+                    margin-top: 12%;
+                    height: 100%;
+                    transition: height 0.5s ease-in-out;
+                    -moz-transition: height 0.5s ease-in-out;
+                    -o-transition: height 0.5s ease-in-out;
+                    -webkit-transition: height 0.5s ease-in-out;
+                }
+            }
+            padding-top: 3px;
+            input{
+                display: flex;
+                width: 40px;
+                height: 32px;
+                opacity: 0;
+                z-index: 2;
+                position: absolute;
+            }
+            
+            input:checked ~ img{
+                content: url("../assets/close.svg");
+            }
+        }
+    }
+}
