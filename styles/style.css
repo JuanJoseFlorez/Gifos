@@ -29,6 +29,7 @@ header {
   justify-content: space-between;
   width: 100%; }
   header nav .menu {
+    z-index: 999;
     padding-top: 3px; }
     header nav .menu img {
       margin-top: 13px; }
@@ -157,6 +158,15 @@ main {
       align-self: center;
       padding-top: 7%;
       width: 10%; }
+    main #Busqueda #img-inicio {
+      display: flex;
+      align-self: center;
+      padding-top: 7%;
+      width: 273px; }
+    main #Busqueda #img-busqueda-sin-resultados {
+      width: 30%;
+      margin-bottom: 3%;
+      margin-top: 10%; }
     main #Busqueda div {
       padding-left: 6%; }
       main #Busqueda div img {
@@ -206,6 +216,14 @@ main {
       text-align: center;
       display: flex;
       opacity: .50; }
+    main #Busqueda h5 {
+      color: #50E3C2;
+      font-size: 1.14em;
+      line-height: 33px;
+      width: 431px;
+      text-align: center;
+      align-self: center;
+      margin-bottom: 18%; }
   main #Favoritos {
     display: flex;
     flex-flow: column wrap;
@@ -216,6 +234,20 @@ main {
       padding: 10px 0px 40px 0px;
       color: #572EE5;
       text-align: center; }
+    main #Favoritos #img-favoritos-sin-contenido {
+      margin-top: 7.7%;
+      margin-bottom: 3%; }
+    main #Favoritos #img-mis-gifos-sin-contenido {
+      margin-top: 7.7%;
+      margin-bottom: 3%; }
+    main #Favoritos h4 {
+      color: #50E3C2;
+      font-size: 1.14em;
+      line-height: 33px;
+      width: 431px;
+      text-align: center;
+      align-self: center;
+      margin-bottom: 18%; }
     main #Favoritos div {
       padding-left: 6%; }
       main #Favoritos div img {

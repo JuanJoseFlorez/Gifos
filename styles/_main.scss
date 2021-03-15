@@ -67,6 +67,17 @@ main{
             padding-top: 7%;
             width:10%;
         }
+        #img-inicio{
+            display: flex;
+            align-self: center;
+            padding-top: 7%;
+            width:273px;
+        }
+        #img-busqueda-sin-resultados{
+            width: 30%;
+            margin-bottom: 3%;
+            margin-top: 10%;
+        }
         div{
             padding-left: 6%;
             img{
@@ -126,7 +137,15 @@ main{
             display: flex;
             opacity:.50;
         }
-    
+        h5{
+            color: $green-gifos;
+            font-size: 1.14em;
+            line-height: 33px;
+            width: 431px;
+            text-align: center;
+            align-self: center;
+            margin-bottom: 18%;
+        }
     }
      /** FINISH ESTILOS BUSQUEDA **/
      /** ESTILOS FAVORITOS **/
@@ -141,6 +160,23 @@ main{
             padding: 10px 0px 40px 0px;
             color: $purple-gifos;
             text-align: center;
+        }
+        #img-favoritos-sin-contenido{
+            margin-top: 7.7%;
+            margin-bottom: 3%;
+        }
+        #img-mis-gifos-sin-contenido{
+            margin-top: 7.7%;
+            margin-bottom: 3%;
+        }
+        h4{
+            color: $green-gifos;
+            font-size: 1.14em;
+            line-height: 33px;
+            width: 431px;
+            text-align: center;
+            align-self: center;
+            margin-bottom: 18%;
         }
         div{
             padding-left: 6%;
