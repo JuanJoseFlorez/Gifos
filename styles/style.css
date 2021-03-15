@@ -24,7 +24,7 @@ body hr {
   width: 100%; }
 
 header {
-  padding: 7% 7%;
+  padding: 7% 7% 0% 7%;
   display: flex;
   justify-content: space-between;
   width: 100%; }
@@ -49,6 +49,8 @@ header {
       opacity: .90;
       height: 0px;
       transition: height 0.5s ease; }
+      header nav .menu ul img {
+        display: none; }
       header nav .menu ul hr {
         height: 1px;
         width: 40px;
@@ -93,6 +95,47 @@ header {
     header nav .menu input:checked ~ img {
       content: url("../assets/close.svg"); }
 
+@media screen and (min-width: 720px) {
+  header {
+    flex-flow: row wrap;
+    padding-top: 1%; }
+    header nav .menu {
+      padding: unset; }
+      header nav .menu ul {
+        margin-top: 7%;
+        flex-flow: row wrap;
+        position: relative;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        background: unset;
+        height: unset; }
+        header nav .menu ul hr {
+          display: none; }
+        header nav .menu ul li {
+          width: unset;
+          padding: unset;
+          display: inline-flex; }
+          header nav .menu ul li:hover {
+            background: unset;
+            color: #50E3C2; }
+          header nav .menu ul li a {
+            padding-top: unset;
+            padding: 0px 0px 10px 25px;
+            font-weight: 700;
+            line-height: unset;
+            color: #572EE5; }
+            header nav .menu ul li a:hover {
+              color: unset; }
+        header nav .menu ul img {
+          margin: 0px 0px 15px 20px;
+          display: flex; }
+          header nav .menu ul img:hover {
+            content: url("../assets/CTA-crear-gifo-hover.svg"); }
+      header nav .menu input {
+        display: none; }
+      header nav .menu img {
+        display: none; } }
 main {
   display: flex;
   flex-flow: column wrap;
@@ -124,7 +167,7 @@ main {
       border: 1px solid #572EE5;
       border-radius: 27px;
       height: 50px;
-      width: 285px;
+      width: 90%;
       margin-left: 5%;
       padding-left: 11%; }
     main #Home .search {
@@ -148,6 +191,10 @@ main {
     display: flex;
     flex-flow: column wrap;
     width: 100%; }
+    main #Busqueda h2:first-child {
+      display: none; }
+    main #Busqueda .ilustra {
+      display: none; }
     main #Busqueda h2 {
       color: #572EE5;
       text-align: center;
@@ -164,30 +211,35 @@ main {
         margin-bottom: 15px;
         display: unset;
         width: 40%; }
-    main #Busqueda a {
+    main #Busqueda .ver_mas {
       display: flex;
       align-self: center; }
-      main #Busqueda a img {
+      main #Busqueda .ver_mas img {
         margin: 50px 0px 60px 0px;
         display: flex;
         width: 127px;
         padding: unset; }
-        main #Busqueda a img:hover {
+        main #Busqueda .ver_mas img:hover {
           content: url("../assets/CTA-ver-mas-hover.svg"); }
     main #Busqueda input {
       border: 1px solid #572EE5;
       border-radius: 27px;
       height: 50px;
-      width: 285px;
+      width: 90%;
+      margin-top: 15%;
       margin-left: 5%;
       padding-left: 11%; }
     main #Busqueda .search {
-      display: flex;
-      width: 20px;
-      margin: -18% 0% 0% 70%;
-      z-index: 2; }
+      display: flex; }
+      main #Busqueda .search img {
+        padding: unset;
+        margin-left: 80%;
+        margin-top: -20%;
+        display: flex;
+        width: 20px;
+        z-index: 2; }
     main #Busqueda h4 {
-      padding-top: 15%;
+      margin-top: 5%;
       font-weight: 700;
       color: #572EE5;
       display: flex;
@@ -223,15 +275,15 @@ main {
         margin-bottom: 15px;
         display: unset;
         width: 40%; }
-    main #Favoritos a {
+    main #Favoritos .ver_mas {
       display: flex;
       align-self: center; }
-      main #Favoritos a img {
+      main #Favoritos .ver_mas img {
         margin: 50px 0px 60px 0px;
         display: flex;
         width: 127px;
         padding: unset; }
-        main #Favoritos a img:hover {
+        main #Favoritos .ver_mas img:hover {
           content: url("../assets/CTA-ver-mas-hover.svg"); }
   main #inchange {
     display: flex;
@@ -251,6 +303,166 @@ main {
       text-align: center;
       margin-bottom: 7%; }
 
+@media screen and (min-width: 720px) {
+  main #Home {
+    height: 550px; }
+    main #Home img {
+      padding-top: 2%;
+      width: 27%;
+      height: auto; }
+    main #Home .search {
+      margin: -4.4% 0% 0% 34%; }
+    main #Home h2 {
+      padding: 5% 36% 0% 36%; }
+    main #Home input {
+      margin: unset;
+      padding-left: 5%;
+      align-self: center;
+      width: 38.3%; }
+    main #Home h4 {
+      padding: 6% 0px 0px 0px; }
+    main #Home p {
+      margin: unset; }
+  main #Busqueda .color-home {
+    color: #50E3C2; }
+  main #Busqueda .ver_mas {
+    margin: 15% 0px 5% 0px;
+    padding: unset; }
+    main #Busqueda .ver_mas img {
+      margin: unset;
+      padding: unset; }
+  main #Busqueda input {
+    margin: unset;
+    padding-left: 5%;
+    align-self: center;
+    width: 38.3%; }
+  main #Busqueda h2:first-child {
+    display: block;
+    color: #572EE5;
+    text-align: center;
+    padding: 5% 36% 0% 36%; }
+  main #Busqueda .color {
+    color: #50E3C2; }
+  main #Busqueda .ilustra {
+    display: flex;
+    align-self: center;
+    padding-top: 2%;
+    width: 27%;
+    height: auto; }
+  main #Busqueda .search img {
+    margin-left: 66%;
+    margin-top: -5%; }
+  main #Busqueda input {
+    margin: unset;
+    padding-left: 5%;
+    align-self: center;
+    width: 38.3%; }
+  main #Busqueda h4 {
+    display: none; }
+  main #Busqueda p {
+    display: none; }
+  main #Busqueda h2 {
+    padding: 6% 8% 0% 8%; }
+  main #Busqueda div img {
+    margin-top: unset;
+    margin-left: 35px;
+    width: 20%; }
+  main #Busqueda img {
+    padding-top: 4%; }
+  main #Busqueda hr {
+    margin-top: 5%; }
+  main #Favoritos div img {
+    margin-top: unset;
+    margin-left: 35px;
+    width: 20%; }
+  main #Favoritos .ver_mas {
+    margin: 15% 0px 5% 0px;
+    padding: unset; }
+    main #Favoritos .ver_mas img {
+      margin: unset;
+      padding: unset; }
+  main #Favoritos h3 {
+    padding: 0px 0px 40px 0px; }
+  main #Crear_Gifo {
+    width: 100%;
+    height: 479px;
+    display: flex; }
+    main #Crear_Gifo .Contenedor {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      width: 47.8%;
+      height: 70%;
+      border: 1px solid #572EE5;
+      padding: 7.5% 10% 4% 10%; }
+      main #Crear_Gifo .Contenedor .tamaño {
+        width: 27px;
+        height: 25px; }
+      main #Crear_Gifo .Contenedor .linea1 {
+        display: flex;
+        border-left: 3px solid #50E3C2;
+        border-top: 3px solid #50E3C2; }
+      main #Crear_Gifo .Contenedor .linea2 {
+        display: flex;
+        margin-left: 90%;
+        border-top: 3px solid #50E3C2;
+        border-right: 3px solid #50E3C2; }
+      main #Crear_Gifo .Contenedor .linea3 {
+        display: flex;
+        margin-top: 30%;
+        border-left: 3px solid #50E3C2;
+        border-bottom: 3px solid #50E3C2; }
+      main #Crear_Gifo .Contenedor .linea4 {
+        display: flex;
+        margin-left: 90%;
+        margin-top: 30%;
+        border-right: 3px solid #50E3C2;
+        border-bottom: 3px solid #50E3C2; }
+      main #Crear_Gifo .Contenedor h2 {
+        text-align: center;
+        color: #572EE5; }
+      main #Crear_Gifo .Contenedor .color {
+        color: #50E3C2; }
+      main #Crear_Gifo .Contenedor p {
+        text-align: center; }
+    main #Crear_Gifo .luz {
+      width: 65px; }
+    main #Crear_Gifo .camara {
+      margin-top: -10%; }
+    main #Crear_Gifo .mov {
+      margin-left: 15%; }
+    main #Crear_Gifo .pelicula {
+      margin-left: 4%;
+      margin-top: 17%; }
+    main #Crear_Gifo .pasos {
+      width: 32px;
+      margin-top: 17%;
+      margin-left: -6%; }
+    main #Crear_Gifo .movp {
+      margin-left: -31%; }
+    main #Crear_Gifo img {
+      width: 110px; }
+    main #Crear_Gifo .create {
+      margin-top: 440px;
+      margin-left: -440px; }
+      main #Crear_Gifo .create:hover {
+        content: url("../assets/CTA-comenzar-hover.svg"); }
+    main #Crear_Gifo .hr_gifos {
+      width: 53%;
+      height: 7px;
+      border-radius: 10px;
+      margin-top: 26%;
+      margin-left: -25%; }
+  main #inchange {
+    height: 750px; }
+    main #inchange h3 {
+      padding-top: unset;
+      margin-top: 5%; }
+    main #inchange p {
+      padding-top: 1%;
+      width: 100%; }
+    main #inchange br {
+      display: none; } }
 footer {
   width: 100%;
   height: 150px;
@@ -268,5 +480,18 @@ footer {
     content: url("../assets/icon-twitter-hover.svg"); }
   footer .Instagram:hover {
     content: url("../assets/icon_instagram-hover.svg"); }
+
+@media screen and (min-width: 720px) {
+  footer {
+    flex-flow: row wrap;
+    padding: 0% 10% 0% 10%;
+    justify-content: space-between; }
+    footer p {
+      padding: unset; }
+    footer div {
+      align-items: center;
+      display: flex; }
+      footer div a {
+        margin-bottom: 14%; } }
 
 /*# sourceMappingURL=style.css.map */

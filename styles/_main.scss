@@ -25,7 +25,7 @@ main{
             border: 1px solid $purple-gifos;
             border-radius: 27px;  
             height: 50px;
-            width: 285px;  
+            width: 90%;  
             margin-left: 5%;
             padding-left: 11%;
         }
@@ -56,6 +56,12 @@ main{
         display: flex;
         flex-flow: column wrap;
         width: 100%;
+        h2:first-child{
+            display: none;
+        }
+        .ilustra{
+            display: none;
+        }
         h2{
             color: $purple-gifos;
             text-align: center;
@@ -76,7 +82,7 @@ main{
                 width: 40%;
             }
         }
-        a{
+        .ver_mas{
             display: flex;
             align-self: center;
             img{
@@ -93,18 +99,25 @@ main{
             border: 1px solid $purple-gifos;
             border-radius: 27px;  
             height: 50px;
-            width: 285px;  
+            width: 90%; 
+            margin-top: 15%;
             margin-left: 5%;
             padding-left: 11%;
         }
         .search{
             display: flex;
-            width: 20px;
-            margin: -18% 0% 0% 70%;
-            z-index: 2;
+            img{
+                padding: unset;
+                margin-left: 80%;
+                margin-top: -20%;
+                display: flex;
+                width: 20px;
+                z-index: 2;
+            }
         }
+        
         h4{
-            padding-top: 15%;
+            margin-top: 5%;
             font-weight: 700;
             color: $purple-gifos;
             display: flex;
@@ -151,7 +164,7 @@ main{
                 width: 40%;
             }
         }
-        a{
+        .ver_mas{
             display: flex;
             align-self: center;
             img{
@@ -183,6 +196,7 @@ main{
             
         }
         p{
+            
             padding-top: 5%;
             text-align: center;
             margin-bottom: 7%;
@@ -190,4 +204,238 @@ main{
     }
     /** FINISH ESTILOS COMUNES **/
 }
+@media screen and (min-width: 720px){
+    main{
+        #Home{
+            height: 550px;
+            img{
+                padding-top: 2%;
+                width: 27%;
+                height: auto;
+                
+            }
+            .search{
+                margin: -4.4% 0% 0% 34%;
+            }
+            h2{
+                padding: 5% 36% 0% 36%;
+            }
+            input{
+                margin: unset;
+                padding-left: 5%;
+                align-self: center;
+                width: 38.3%;
+            }
+            h4{
+                padding: 6% 0px 0px 0px;
+                
+            }
+            p{
+                margin: unset;
+            }
 
+        }
+        #Busqueda{
+            
+            .color-home{
+                color: $green-gifos;
+            }
+            .ver_mas{
+                margin: 15% 0px 5% 0px;
+                padding: unset;
+                img{
+                    margin: unset;
+                    padding: unset;
+                }
+            }
+            input{
+                margin: unset;
+                padding-left: 5%;
+                align-self: center;
+                width: 38.3%;
+            }
+            h2:first-child{
+                display: block;
+                color: $purple-gifos;
+                text-align: center;
+                padding: 5% 36% 0% 36%;
+            }
+            .color{
+                color: $green-gifos;
+            }
+            .ilustra{
+                display: flex;
+                align-self: center;
+                padding-top: 2%;
+                width:27%;
+                height: auto;
+            }
+            .search{
+                img{
+                    
+                    margin-left: 66%;
+                    margin-top: -5%;
+                }
+            }
+            input{
+                margin: unset;
+                padding-left: 5%;
+                align-self: center;
+                width: 38.3%;
+            }
+            h4{
+                display: none;
+                
+            }
+            p{
+                display: none;
+            }
+            h2{
+                padding: 6% 8% 0% 8%;
+            }
+            div{
+                img{
+                    margin-top: unset;
+                    margin-left: 35px;
+                    width: 20%;
+                }
+            }
+            img{
+                padding-top: 4%;
+            }
+            
+            hr{
+                margin-top: 5%;
+            }
+        }
+        #Favoritos{
+            div{
+                img{
+                    margin-top: unset;
+                    margin-left: 35px;
+                    width: 20%;
+                }
+            }
+            .ver_mas{
+                margin: 15% 0px 5% 0px;
+                padding: unset;
+                img{
+                    margin: unset;
+                    padding: unset;
+                }
+            }
+            h3{
+                padding: 0px 0px 40px 0px;
+            }
+        }
+        #Crear_Gifo{
+            width: 100%;
+            height: 479px;
+            display: flex;
+            .Contenedor{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                width: 47.8%;
+                height: 70%;
+                border: 1px solid $purple-gifos;
+                padding: 7.5% 10% 4% 10%;
+                
+                .tamaño{
+                    width: 27px;
+                    height: 25px;
+                   
+                }
+                .linea1{
+                    display: flex;
+                    border-left: 3px solid $green-gifos;
+                    border-top: 3px solid $green-gifos;
+                }
+                .linea2{
+                    display: flex;
+                    margin-left: 90%;
+                    border-top: 3px solid $green-gifos;
+                    border-right: 3px solid $green-gifos;
+                }
+                .linea3{
+                    display: flex;
+                    margin-top: 30%;
+                    border-left: 3px solid $green-gifos;
+                    border-bottom: 3px solid $green-gifos;
+                }
+                .linea4{
+                    display: flex;
+                    margin-left: 90%;
+                    margin-top: 30%;
+                    border-right: 3px solid $green-gifos;
+                    border-bottom: 3px solid $green-gifos;
+                }
+                h2{
+                    text-align: center;
+                    color: $purple-gifos;
+                }
+                .color{
+                    color: $green-gifos;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+            .luz{
+                width: 65px;
+            }
+            .camara{
+                
+                margin-top: -10%;
+            }
+            .mov{
+                margin-left: 15%;
+            }
+            .pelicula{
+                margin-left: 4%;
+                margin-top: 17%;
+            }
+            .pasos{
+                width: 32px;
+                margin-top: 17%;
+                margin-left: -6%;
+            }
+            .movp{
+                margin-left: -31%;
+            }
+            img{
+                width: 110px;
+            }
+            .create{
+                margin-top: 440px;
+                margin-left: -440px;
+                &:hover{
+                    content: url("../assets/CTA-comenzar-hover.svg");
+                }
+            }
+            .hr_gifos{
+                width: 53%;
+                height: 7px;
+                border-radius: 10px;
+                margin-top: 26%;
+                margin-left: -25%;
+            }
+        }
+
+        #inchange{
+            height: 750px;
+            h3{
+                padding-top: unset;
+                margin-top: 5%;
+            }
+            p{
+                padding-top: 1%;
+                width: 100%;
+            }
+            br{
+                display: none;
+            }
+        }
+    }
+
+}

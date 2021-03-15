@@ -5,7 +5,7 @@ body{
     }
 }
 header{
-    padding: 7% 7%;
+    padding: 7% 7% 0% 7%;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -34,6 +34,9 @@ header{
                 opacity:.90;
                 height: 0px;
                 transition: height 0.5s ease;
+                img{
+                    display: none;
+                }
                 hr{
                     height: 1px;
                     width: 40px;
@@ -64,6 +67,7 @@ header{
                         &:hover{
                             color: #fff;
                         }
+                        
                     }
 
                 }
@@ -90,6 +94,66 @@ header{
             
             input:checked ~ img{
                 content: url("../assets/close.svg");
+            }
+        }
+    }
+}
+@media screen and (min-width: 720px){
+    header{
+        flex-flow: row wrap;
+        padding-top: 1%;
+        nav{
+            
+            .menu{
+                padding: unset;
+                ul{
+                    margin-top: 7%;
+                    flex-flow: row wrap;
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    overflow: hidden;
+                    background: unset;
+                    height: unset;
+                    hr{
+                        display: none;
+                    }
+                    li{
+                        
+                        width: unset;
+                        padding: unset;
+                        display: inline-flex;
+                        &:hover{
+                            background: unset;
+                            color: $green-gifos;
+                        }
+                        a{
+                            padding-top: unset;
+                            padding: 0px 0px 10px 25px;
+                            font-weight: 700;
+                            line-height: unset;
+                            color: $purple-gifos;
+                            &:hover{
+                                color: unset;
+                                
+                            }
+                        }
+                    }
+                    img{
+                        margin: 0px 0px 15px 20px;
+                        display: flex;
+                        &:hover{
+                            content: url("../assets/CTA-crear-gifo-hover.svg");
+                        }
+                    }
+                }
+                input{
+                    display: none;
+                }
+                img{
+                    
+                    display: none;
+                }
             }
         }
     }
