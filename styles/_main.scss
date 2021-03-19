@@ -91,6 +91,9 @@ main{
                 margin-bottom: 15px;
                 display: unset;
                 width: 40%;
+                &:hover{ 
+                    filter: contrast(100%) sepia(1) hue-rotate(220deg) saturate(1000%);
+                }
             }
         }
         .ver_mas{
@@ -242,6 +245,7 @@ main{
 }
 @media screen and (min-width: 720px){
     main{
+        
         #Home{
             height: 550px;
             img{

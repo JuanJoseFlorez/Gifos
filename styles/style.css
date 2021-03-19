@@ -221,6 +221,8 @@ main {
         margin-bottom: 15px;
         display: unset;
         width: 40%; }
+        main #Busqueda div img:hover {
+          filter: contrast(100%) sepia(1) hue-rotate(220deg) saturate(1000%); }
     main #Busqueda .ver_mas {
       display: flex;
       align-self: center; }
