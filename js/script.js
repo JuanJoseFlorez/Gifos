@@ -11,3 +11,7 @@ changeButton.addEventListener('click', () => {
     changeP.innerHTML = "El acceso a tu camara será válido sólo por el tiempo en el que estés creando el GIFO.";
     changeButton.style.display = "none";
 })
+
+function togglePopUp(){
+    document.getElementById("popup-1").classList.toggle("active");
+  }

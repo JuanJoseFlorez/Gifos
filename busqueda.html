@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/carrusel.css">
     <script src="js/glider.min.js"></script>
     <script src="js/carrusel.js"></script>
+    <script src="js/script.js"></script>
     <title>BUSQUEDA</title>
 </head>
 
@@ -34,6 +35,29 @@
         </nav>
     </header>
     <main>
+        <!--Inicio PopUp -->
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+              <div class="content">
+                  <img onclick="togglePopUp()" class="close-btn" src="assets/close.svg" alt="close">
+                  <img id="gif-max" src="http://placehold.it/500x500?text=img" alt="placeholder">
+                  <div id="container-section-popup">
+                  <section>
+                    <div>
+                        <h3>User</h3>
+                      <h2>Titulo GIFO</h2>
+                  </div>
+                  <div id="icons-gif-max">
+                      <img id="gif-max-fav" src="assets/icon-fav-active.svg" alt="">
+                      <img id="gif-max-download" src="assets/icon-download.svg" alt="">
+                  </div>
+                  </section>
+                </div>
+                  
+                  
+            </div>
+          </div>
+          <!--Fin PopUp -->
         <section id="Busqueda">
             <h2>Inspírate, busca, guarda, y crea los mejores <span class="color"> GIFOS</span></h2>
             <img src="assets/ilustra_header.svg" alt="img_home" class="ilustra">
@@ -44,7 +68,7 @@
             <hr color="#9CAFC3">
             <h2>Titulo</h2>
             <div>
-                <img alt="Test" src="http://placehold.it/300x300?text=1">
+                <img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=1">
                 <img alt="Test" src="http://placehold.it/300x300?text=1">
                 <img alt="Test" src="http://placehold.it/300x300?text=1">
                 <img alt="Test" src="http://placehold.it/300x300?text=1">

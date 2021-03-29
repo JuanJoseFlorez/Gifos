@@ -162,6 +162,24 @@ main{
             align-self: center;
             margin-bottom: 18%;
         }
+        #casilla-busqueda{
+            margin: unset;
+            position: relative;
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            input{
+                margin: unset;
+                align-self: center;
+            }
+            img{
+                margin: unset;
+                padding: unset;
+                position: absolute;
+                margin-left: -7%;
+            }
+        }
     }
      /** FINISH ESTILOS BUSQUEDA **/
      /** ESTILOS FAVORITOS **/
@@ -241,8 +259,79 @@ main{
             margin-bottom: 7%;
         }
     }
+
+    .popup{
+        .overlay{
+            position: fixed;
+            top:0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(255,255,255,0.90);
+            z-index:3;
+            display: none;
+          }
+          .content{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%) scale(0);
+            width: 90%;
+            height: auto;
+            z-index:4;
+            text-align: center;
+            padding: 20px;
+            align-self: center;
+
+            h3{
+                text-align: justify;
+                margin-left: 2%;
+                font-size: 1em;
+            }
+            h2{
+                text-align: justify; 
+                font-size: 1.2em;
+            }
+          }
+          .close-btn{
+            position: absolute;
+            right: 5%;
+            top: -40px;
+            cursor: pointer;
+          }
+
+          section{
+              display: flex;
+              justify-content: space-between;
+
+              #icons-gif-max{
+                  display: flex;
+                  align-items: center;
+                  margin-right: 3%;
+
+                  #gif-max-download{
+                      margin-left: 30%;
+                  }
+              }
+          }
+    }
+    .popup.active{
+        .overlay{
+            display:block;
+          }
+          .content{
+            transition: all 800ms ease-in-out;
+            transform:translate(-50%, -50%) scale(1);
+          }
+    }
+    #gif-max{
+        width: 100%;
+        height: auto;
+    }
     /** FINISH ESTILOS COMUNES **/
 }
+
+
 @media screen and (min-width: 720px){
     main{
         
@@ -346,6 +435,11 @@ main{
             
             hr{
                 margin-top: 5%;
+            }
+            #casilla-busqueda{
+                img{
+                    margin-left: -4%;
+                }
             }
         }
         #Favoritos{
@@ -477,5 +571,47 @@ main{
             }
         }
     }
-
+    .popup{
+        .close-btn{
+          right: 35%;
+          top: -40px;
+        }
+        #container-section-popup{
+            display: flex;
+            justify-content: center;
+        }
+        section{
+            width: 100%;
+        }
+  }
+  #gif-max{
+      width: 10%;
+  }
+}
+@media screen and (min-width: 1200px){
+    main{
+        #Busqueda{
+            #casilla-busqueda{
+                img{
+                    margin-left: -3%;
+                }
+            }
+        }
+        .popup{
+              .close-btn{
+                right: 35%;
+                top: -40px;
+              }
+              #container-section-popup{
+                  display: flex;
+                  justify-content: center;
+              }
+              section{
+                  width: 30%;
+              }
+        }
+        #gif-max{
+            width: 30%;
+        }
+    }
 }

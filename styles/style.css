@@ -278,6 +278,21 @@ main {
       text-align: center;
       align-self: center;
       margin-bottom: 18%; }
+    main #Busqueda #casilla-busqueda {
+      margin: unset;
+      position: relative;
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content: center; }
+      main #Busqueda #casilla-busqueda input {
+        margin: unset;
+        align-self: center; }
+      main #Busqueda #casilla-busqueda img {
+        margin: unset;
+        padding: unset;
+        position: absolute;
+        margin-left: -7%; }
   main #Favoritos {
     display: flex;
     flex-flow: column wrap;
@@ -336,6 +351,55 @@ main {
       padding-top: 5%;
       text-align: center;
       margin-bottom: 7%; }
+  main .popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 3;
+    display: none; }
+  main .popup .content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 90%;
+    height: auto;
+    z-index: 4;
+    text-align: center;
+    padding: 20px;
+    align-self: center; }
+    main .popup .content h3 {
+      text-align: justify;
+      margin-left: 2%;
+      font-size: 1em; }
+    main .popup .content h2 {
+      text-align: justify;
+      font-size: 1.2em; }
+  main .popup .close-btn {
+    position: absolute;
+    right: 5%;
+    top: -40px;
+    cursor: pointer; }
+  main .popup section {
+    display: flex;
+    justify-content: space-between; }
+    main .popup section #icons-gif-max {
+      display: flex;
+      align-items: center;
+      margin-right: 3%; }
+      main .popup section #icons-gif-max #gif-max-download {
+        margin-left: 30%; }
+  main .popup.active .overlay {
+    display: block; }
+  main .popup.active .content {
+    transition: all 800ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1); }
+  main #gif-max {
+    width: 100%;
+    height: auto; }
 
 @media screen and (min-width: 720px) {
   main #Home {
@@ -405,6 +469,8 @@ main {
     padding-top: 4%; }
   main #Busqueda hr {
     margin-top: 5%; }
+  main #Busqueda #casilla-busqueda img {
+    margin-left: -4%; }
   main #Favoritos div img {
     margin-top: unset;
     margin-left: 35px;
@@ -496,7 +562,32 @@ main {
       padding-top: 1%;
       width: 100%; }
     main #inchange br {
-      display: none; } }
+      display: none; }
+
+  .popup .close-btn {
+    right: 35%;
+    top: -40px; }
+  .popup #container-section-popup {
+    display: flex;
+    justify-content: center; }
+  .popup section {
+    width: 100%; }
+
+  #gif-max {
+    width: 10%; } }
+@media screen and (min-width: 1200px) {
+  main #Busqueda #casilla-busqueda img {
+    margin-left: -3%; }
+  main .popup .close-btn {
+    right: 35%;
+    top: -40px; }
+  main .popup #container-section-popup {
+    display: flex;
+    justify-content: center; }
+  main .popup section {
+    width: 30%; }
+  main #gif-max {
+    width: 30%; } }
 footer {
   width: 100%;
   height: 150px;
