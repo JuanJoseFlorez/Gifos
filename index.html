@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/carrusel.css">
     <script src="js/glider.min.js"></script>
     <script src="js/carrusel.js"></script>
+    <script src="js/script.js"></script>
     <title>HOME</title>
 </head>
 
@@ -34,6 +35,29 @@
         </nav>
     </header>
     <main>
+        <!--Inicio PopUp -->
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+              <div class="content">
+                  <img onclick="togglePopUp()" class="close-btn" src="assets/close.svg" alt="close">
+                  <img id="gif-max" src="http://placehold.it/500x500?text=img" alt="placeholder">
+                  <div id="container-section-popup">
+                  <section>
+                    <div>
+                        <h3>User</h3>
+                      <h2>Titulo GIFO</h2>
+                  </div>
+                  <div id="icons-gif-max">
+                      <img id="gif-max-fav" src="assets/icon-fav-active.svg" alt="">
+                      <img id="gif-max-download" src="assets/icon-download.svg" alt="">
+                  </div>
+                  </section>
+                </div>
+                  
+                  
+            </div>
+          </div>
+          <!--Fin PopUp -->
         <section id="Home">
             <h2>Inspírate, busca, guarda, y crea los mejores <span class="color-home"> GIFOS</span></h2>
             <img src="assets/ilustra_header.svg" alt="img_home">
@@ -46,18 +70,18 @@
             <hr color="#9CAFC3">
             <h2 class="change_title">Titulo</h2>
             <div>
-                <img alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
-                <img alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
-                <img alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
-                <img alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
-                <img alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
-                <img alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
-                <img alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
-                <img alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
-                <img alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
-                <img alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
-                <img alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
-                <img alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
+                <img onclick="togglePopUp()" alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
+                <img onclick="togglePopUp()" alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
+                <img onclick="togglePopUp()" alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
+                <img onclick="togglePopUp()" alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
+                <img onclick="togglePopUp()" alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
+                <img onclick="togglePopUp()" alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
+                <img onclick="togglePopUp()" alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
+                <img onclick="togglePopUp()" alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
+                <img onclick="togglePopUp()" alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
+                <img onclick="togglePopUp()" alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
+                <img onclick="togglePopUp()" alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
+                <img onclick="togglePopUp()" alt="Test" src="assets/imgBlanca.jpg" class="resultado_gifos">
             </div>
             <a href="#" class="ver_mas"><img src="assets/CTA-ver-mas.svg" alt="Ver mas" class="ver-mas"></a>
         
@@ -68,22 +92,22 @@
                 GIFOS de nuestra comunidad.</p>
             <div class="glider-contain">
                 <div class="glider">
-                    <div><img alt="Test" src="http://placehold.it/300x300?text=1"></div>
-                    <div><img alt="Test" src="http://placehold.it/300x300?text=2"></div>
-                    <div><img alt="Test" src="http://placehold.it/300x300?text=3"></div>
-                    <div><img alt="Test" src="http://placehold.it/300x300?text=4"></div>
-                    <div><img alt="Test" src="http://placehold.it/300x300?text=5"></div>
-                    <div><img alt="Test" src="http://placehold.it/300x300?text=6"></div>
-                    <div><img alt="Test" src="http://placehold.it/300x300?text=7"></div>
-                    <div><img alt="Test" src="http://placehold.it/300x300?text=8"></div>
-                    <div><img alt="Test" src="http://placehold.it/300x300?text=9"></div>
-                    <div><img alt="Test" src="http://placehold.it/300x300?text=10"></div>
-                    <div><img alt="Test" src="http://placehold.it/300x300?text=11"></div>
-                    <div><img alt="Test" src="http://placehold.it/300x300?text=12"></div>
-                    <div><img alt="Test" src="http://placehold.it/300x300?text=13"></div>
-                    <div><img alt="Test" src="http://placehold.it/300x300?text=14"></div>
-                    <div><img alt="Test" src="http://placehold.it/300x300?text=15"></div>
-                    <div><img alt="Test" src="http://placehold.it/300x300?text=16"></div>
+                    <div><img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=1"></div>
+                    <div><img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=2"></div>
+                    <div><img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=3"></div>
+                    <div><img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=4"></div>
+                    <div><img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=5"></div>
+                    <div><img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=6"></div>
+                    <div><img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=7"></div>
+                    <div><img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=8"></div>
+                    <div><img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=9"></div>
+                    <div><img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=10"></div>
+                    <div><img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=11"></div>
+                    <div><img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=12"></div>
+                    <div><img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=13"></div>
+                    <div><img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=14"></div>
+                    <div><img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=15"></div>
+                    <div><img onclick="togglePopUp()" alt="Test" src="http://placehold.it/300x300?text=16"></div>
                 </div>
                 <button class="glider-prev">&laquo;</button>
                 <button class="glider-next">&raquo;</button>
