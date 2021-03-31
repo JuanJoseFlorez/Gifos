@@ -7,8 +7,9 @@ let change_title = document.getElementsByClassName('change_title')[0];
 let imagenes = document.getElementsByClassName('resultado_gifos');
 
 lupa.addEventListener('click', () => {
+    
     if (input_gifo.value = "") {
-        
+        alert('dfdfdf');
     } else {
         contenedor.style.display = "flex";
         generarGIFO();
@@ -40,10 +41,9 @@ function generarGIFO() {
             console.log(data);
 
             for (let i = 0; i < imagenes.length; i++) {
+                imagenes[i].setAttribute('src', 'https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif');
                 let gifi = data.data[i].images.original.url;
                 imagenes[i].setAttribute('src', gifi);
-
-
             }
 
 
