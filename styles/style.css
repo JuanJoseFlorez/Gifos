@@ -195,7 +195,20 @@ main {
   main #Busqueda {
     display: none;
     flex-flow: column wrap;
-    width: 100%; }
+    width: 100%;
+    /**div{
+        padding-left: 6%;
+        img{
+            margin-left: 15px;
+            margin-bottom: 15px;
+            display: unset;
+            width: 40%;
+            height: 200px;
+            &:hover{ 
+                filter: contrast(100%) sepia(1) hue-rotate(220deg) saturate(1000%);
+            }
+        }
+    }**/ }
     main #Busqueda h2:first-child {
       display: none; }
     main #Busqueda .ilustra {
@@ -218,16 +231,35 @@ main {
       width: 30%;
       margin-bottom: 3%;
       margin-top: 10%; }
-    main #Busqueda div {
-      padding-left: 6%; }
-      main #Busqueda div img {
-        margin-left: 15px;
-        margin-bottom: 15px;
-        display: unset;
+    main #Busqueda section {
+      padding-left: 6%;
+      display: flex;
+      flex-flow: wrap; }
+      main #Busqueda section .contenedor {
         width: 40%;
-        height: 200px; }
-        main #Busqueda div img:hover {
+        margin: 1%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end; }
+        main #Busqueda section .contenedor:hover img {
           filter: contrast(100%) sepia(1) hue-rotate(220deg) saturate(1000%); }
+        main #Busqueda section .contenedor:hover .botonesImg {
+          opacity: 1; }
+        main #Busqueda section .contenedor img {
+          min-width: 100%;
+          display: block;
+          backface-visibility: hidden; }
+        main #Busqueda section .contenedor .botonesImg {
+          transition: .5s ease;
+          position: absolute;
+          display: flex;
+          top: 10%;
+          opacity: 0; }
+          main #Busqueda section .contenedor .botonesImg img {
+            min-width: 40px;
+            margin: unset;
+            padding: 3%;
+            cursor: pointer; }
     main #Busqueda .ver_mas {
       display: flex;
       align-self: center; }
@@ -426,57 +458,70 @@ main {
       padding: 6% 0px 0px 0px; }
     main #Home p {
       margin: unset; }
-  main #Busqueda .color-home {
-    color: #50E3C2; }
-  main #Busqueda .ver_mas {
-    margin: 15% 0px 5% 0px;
-    padding: unset; }
-    main #Busqueda .ver_mas img {
-      margin: unset;
+  main #Busqueda {
+    /**div{
+        img{
+            margin-top: unset;
+            margin-left: 35px;
+            width: 20%;
+            height: 250px;
+        }
+    }*/ }
+    main #Busqueda .color-home {
+      color: #50E3C2; }
+    main #Busqueda .ver_mas {
+      margin: 15% 0px 5% 0px;
       padding: unset; }
-  main #Busqueda input {
-    margin: unset;
-    padding-left: 5%;
-    align-self: center;
-    width: 38.3%; }
-  main #Busqueda h2:first-child {
-    display: block;
-    color: #572EE5;
-    text-align: center;
-    padding: 5% 36% 0% 36%; }
-  main #Busqueda .color {
-    color: #50E3C2; }
-  main #Busqueda .ilustra {
-    display: flex;
-    align-self: center;
-    padding-top: 2%;
-    width: 27%;
-    height: auto; }
-  main #Busqueda .search img {
-    margin-left: 66%;
-    margin-top: -5%; }
-  main #Busqueda input {
-    margin: unset;
-    padding-left: 5%;
-    align-self: center;
-    width: 38.3%; }
-  main #Busqueda h4 {
-    display: none; }
-  main #Busqueda p {
-    display: none; }
-  main #Busqueda h2 {
-    padding: 6% 8% 0% 8%; }
-  main #Busqueda div img {
-    margin-top: unset;
-    margin-left: 35px;
-    width: 20%;
-    height: 250px; }
-  main #Busqueda img {
-    padding-top: 4%; }
-  main #Busqueda hr {
-    margin-top: 5%; }
-  main #Busqueda #casilla-busqueda img {
-    margin-left: -4%; }
+      main #Busqueda .ver_mas img {
+        margin: unset;
+        padding: unset; }
+    main #Busqueda input {
+      margin: unset;
+      padding-left: 5%;
+      align-self: center;
+      width: 38.3%; }
+    main #Busqueda h2:first-child {
+      display: block;
+      color: #572EE5;
+      text-align: center;
+      padding: 5% 36% 0% 36%; }
+    main #Busqueda .color {
+      color: #50E3C2; }
+    main #Busqueda .ilustra {
+      display: flex;
+      align-self: center;
+      padding-top: 2%;
+      width: 27%;
+      height: auto; }
+    main #Busqueda .search img {
+      margin-left: 66%;
+      margin-top: -5%; }
+    main #Busqueda input {
+      margin: unset;
+      padding-left: 5%;
+      align-self: center;
+      width: 38.3%; }
+    main #Busqueda h4 {
+      display: none; }
+    main #Busqueda p {
+      display: none; }
+    main #Busqueda h2 {
+      padding: 6% 8% 0% 8%; }
+    main #Busqueda section .contenedor {
+      width: 30%; }
+      main #Busqueda section .contenedor img {
+        height: 250px; }
+      main #Busqueda section .contenedor .botonesImg {
+        top: -38%; }
+        main #Busqueda section .contenedor .botonesImg img {
+          filter: none;
+          min-width: 40px; }
+    main #Busqueda img {
+      padding-top: 4%; }
+    main #Busqueda hr {
+      margin-top: 5%; }
+    main #Busqueda #casilla-busqueda img {
+      margin-left: -4%; }
   main #Favoritos div img {
     margin-top: unset;
     margin-left: 35px;
@@ -584,6 +629,15 @@ main {
 @media screen and (min-width: 1200px) {
   main #Busqueda #casilla-busqueda img {
     margin-left: -3%; }
+  main #Busqueda section .contenedor {
+    width: 20%; }
+    main #Busqueda section .contenedor img {
+      height: 250px; }
+    main #Busqueda section .contenedor .botonesImg {
+      top: -36%; }
+      main #Busqueda section .contenedor .botonesImg img {
+        filter: none;
+        min-width: 40px; }
   main .popup .close-btn {
     right: 35%;
     top: -40px; }
@@ -624,5 +678,3 @@ footer {
       display: flex; }
       footer div a {
         margin-bottom: 14%; } }
-
-/*# sourceMappingURL=style.css.map */

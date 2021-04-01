@@ -89,7 +89,7 @@ main{
             margin-bottom: 3%;
             margin-top: 10%;
         }
-        div{
+        /**div{
             padding-left: 6%;
             img{
                 margin-left: 15px;
@@ -101,6 +101,42 @@ main{
                     filter: contrast(100%) sepia(1) hue-rotate(220deg) saturate(1000%);
                 }
             }
+        }**/
+        section{
+                padding-left: 6%;
+                display: flex;
+                flex-flow: wrap;
+                .contenedor{
+                    width: 40%;
+                    margin: 1%;
+                    position: relative;
+                    display: flex;
+                    justify-content: flex-end;
+                    &:hover img{
+                        filter: contrast(100%) sepia(1) hue-rotate(220deg) saturate(1000%);
+                    }
+                    &:hover .botonesImg{
+                        opacity: 1;
+                    }
+                    img{
+                        min-width: 100%;
+                        display: block;
+                        backface-visibility: hidden;
+                    }
+                    .botonesImg{
+                        transition: .5s ease;
+                        position: absolute;
+                        display: flex;
+                        top: 10%;
+                        opacity: 0;
+                        img{
+                            min-width: 40px;
+                            margin: unset;
+                            padding: 3%;
+                            cursor: pointer;
+                        }
+                    }
+                }
         }
         .ver_mas{
             display: flex;
@@ -428,12 +464,27 @@ main{
             h2{
                 padding: 6% 8% 0% 8%;
             }
-            div{
+            /**div{
                 img{
                     margin-top: unset;
                     margin-left: 35px;
                     width: 20%;
                     height: 250px;
+                }
+            }*/
+            section{
+                .contenedor{
+                    width: 30%;
+                    img{
+                        height: 250px;
+                    }
+                    .botonesImg{
+                        top: -38%;
+                        img{
+                            filter: none;
+                            min-width: 40px;
+                        }
+                    }
                 }
             }
             img{
@@ -601,6 +652,24 @@ main{
             #casilla-busqueda{
                 img{
                     margin-left: -3%;
+                }
+            }
+
+            section{
+                .contenedor{
+                    width: 20%;
+                    
+                    img{
+                        height: 250px;
+                    }
+                    .botonesImg{
+                        top: -36%;
+                        img{
+                            filter: none;
+                            min-width: 40px;
+                            
+                        }
+                    }
                 }
             }
         }

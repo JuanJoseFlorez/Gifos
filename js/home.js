@@ -1,4 +1,4 @@
-alert('funciona')
+alert('funciona');
 
 let lupa = document.getElementsByClassName('search')[0];
 let contenedor = document.getElementById('Busqueda');
