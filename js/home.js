@@ -9,7 +9,7 @@ let imagenes = document.getElementsByClassName('resultado_gifos');
 lupa.addEventListener('click', () => {
     
     if (input_gifo.value = "") {
-        alert('dfdfdf');
+        
     } else {
         contenedor.style.display = "flex";
         generarGIFO();
