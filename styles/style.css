@@ -192,23 +192,39 @@ main {
       font-size: 14px;
       color: #572EE5;
       line-height: 25px; }
+  main #Busqueda-sin-resultados {
+    display: none;
+    flex-flow: column wrap;
+    width: 100%; }
+    main #Busqueda-sin-resultados #img-busqueda-sin-resultados {
+      width: 30%;
+      margin-bottom: 3%;
+      margin-top: 10%;
+      align-self: center; }
+    main #Busqueda-sin-resultados h5 {
+      color: #50E3C2;
+      font-size: 1.14em;
+      line-height: 33px;
+      text-align: center;
+      align-self: center;
+      margin-bottom: 18%; }
+    main #Busqueda-sin-resultados h2 {
+      color: #572EE5;
+      text-align: center;
+      padding: 15% 8% 0% 8%;
+      margin-bottom: 10%; }
+    main #Busqueda-sin-resultados hr {
+      margin-top: 10%;
+      align-self: center;
+      height: 1px;
+      width: 157px;
+      text-align: center;
+      display: flex;
+      opacity: .50; }
   main #Busqueda {
     display: none;
     flex-flow: column wrap;
-    width: 100%;
-    /**div{
-        padding-left: 6%;
-        img{
-            margin-left: 15px;
-            margin-bottom: 15px;
-            display: unset;
-            width: 40%;
-            height: 200px;
-            &:hover{ 
-                filter: contrast(100%) sepia(1) hue-rotate(220deg) saturate(1000%);
-            }
-        }
-    }**/ }
+    width: 100%; }
     main #Busqueda h2:first-child {
       display: none; }
     main #Busqueda .ilustra {
@@ -227,10 +243,6 @@ main {
       align-self: center;
       padding-top: 7%;
       width: 273px; }
-    main #Busqueda #img-busqueda-sin-resultados {
-      width: 30%;
-      margin-bottom: 3%;
-      margin-top: 10%; }
     main #Busqueda section {
       padding-left: 6%;
       display: flex;
@@ -307,14 +319,6 @@ main {
       text-align: center;
       display: flex;
       opacity: .50; }
-    main #Busqueda h5 {
-      color: #50E3C2;
-      font-size: 1.14em;
-      line-height: 33px;
-      width: 431px;
-      text-align: center;
-      align-self: center;
-      margin-bottom: 18%; }
     main #Busqueda #casilla-busqueda {
       margin: unset;
       position: relative;
@@ -440,7 +444,7 @@ main {
 
 @media screen and (min-width: 720px) {
   main #Home {
-    height: 550px; }
+    height: 500px; }
     main #Home img {
       padding-top: 2%;
       width: 27%;
@@ -458,6 +462,16 @@ main {
       padding: 6% 0px 0px 0px; }
     main #Home p {
       margin: unset; }
+  main #Busqueda-sin-resultados #img-busqueda-sin-resultados {
+    width: 20%;
+    margin-bottom: 3%;
+    margin-top: 5%;
+    align-self: center; }
+  main #Busqueda-sin-resultados h2 {
+    padding: 8% 8% 0% 8%;
+    margin: unset; }
+  main #Busqueda-sin-resultados hr {
+    margin: unset; }
   main #Busqueda {
     /**div{
         img{
@@ -627,6 +641,8 @@ main {
   #gif-max {
     width: 10%; } }
 @media screen and (min-width: 1200px) {
+  main #Home {
+    height: 550px; }
   main #Busqueda #casilla-busqueda img {
     margin-left: -3%; }
   main #Busqueda section .contenedor {
@@ -678,3 +694,5 @@ footer {
       display: flex; }
       footer div a {
         margin-bottom: 14%; } }
+
+/*# sourceMappingURL=style.css.map */
