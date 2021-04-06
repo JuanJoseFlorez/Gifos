@@ -1,7 +1,7 @@
 /**
  * Para la seccion de crear GIFOS
  */
- 
+/** 
 let changeButton = document.getElementById('changeButton');
 
 changeButton.addEventListener('click', () => {
@@ -15,6 +15,7 @@ changeButton.addEventListener('click', () => {
     changeP.innerHTML = "El acceso a tu camara será válido sólo por el tiempo en el que estés creando el GIFO.";
     changeButton.style.display = "none";
 })
+**/
 function downloadURI(uri, name) {
     var link = document.createElement("a");
     link.download = name;

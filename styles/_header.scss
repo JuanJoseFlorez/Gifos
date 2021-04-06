@@ -1,15 +1,25 @@
+:root{
+    --purple-gifos: #572EE5;
+    --purple-movile: #572EE5;
+    --default-background: white;
+
+}
 body{
     hr{
         height: 5px;
         width: 100%;
+        color: black;
     }
 }
+
 header{
     padding: 7% 7% 0% 7%;
     display: flex;
     justify-content: space-between;
     width: 100%;
-
+    a{
+        margin-top: 3%;
+    }
     nav{
         .menu{
             z-index: 999;
@@ -28,7 +38,7 @@ header{
                 right: 0;
                 overflow: hidden;
                 list-style: none;
-                background: $purple-gifos;
+                background: var(--purple-movile);
                 filter:alpha(opacity=90);
                 -moz-opacity:.90;
                 opacity:.90;
@@ -132,7 +142,7 @@ header{
                             padding: 0px 0px 10px 25px;
                             font-weight: 700;
                             line-height: unset;
-                            color: $purple-gifos;
+                            color: var(--purple-gifos);
                             &:hover{
                                 color: unset;
                                 

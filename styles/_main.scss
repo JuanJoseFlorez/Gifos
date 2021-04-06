@@ -1,6 +1,17 @@
+:root{
+    --purple-gifos: #572EE5;
+    --purple-movile: #572EE5;
+    --default-background: white;
+    --color-p: black;
+}
+//var(--color-p)
+body{
+    background-color: var(--default-background);
+}
 main{
     display: flex;
     flex-flow: column wrap;
+    
     /** ESTILOS HOME **/
     #Home{
         display: flex;
@@ -8,7 +19,7 @@ main{
         width: 100%;
         height: 480px;
         h2{
-            color: $purple-gifos;
+            color: var(--purple-gifos);
             text-align: center;
             padding: 8% 8% 0% 8%;
         }
@@ -22,7 +33,7 @@ main{
             width:273px;
         }
         input{
-            border: 1px solid $purple-gifos;
+            border: 1px solid var(--purple-movile);
             border-radius: 27px;  
             height: 50px;
             width: 90%;  
@@ -43,7 +54,7 @@ main{
         h4{
             padding-top: 15%;
             font-weight: 700;
-            color: $purple-gifos;
+            color: var(--purple-gifos);
             display: flex;
             align-self: center;
         }
@@ -51,7 +62,7 @@ main{
             margin: 5% 20% 0% 20%;
             text-align: center;
             font-size: 14px;
-            color: $purple-gifos;
+            color: var(--purple-gifos);
             line-height: 25px;
         }
     }
@@ -76,7 +87,7 @@ main{
             margin-bottom: 18%;
         }
         h2{
-            color: $purple-gifos;
+            color: var(--purple-gifos);
             text-align: center;
             padding: 15% 8% 0% 8%;
             margin-bottom: 10%;
@@ -102,7 +113,7 @@ main{
             display: none;
         }
         h2{
-            color: $purple-gifos;
+            color: var(--purple-gifos);
             text-align: center;
             padding: 15% 8% 0% 8%;
         }
@@ -170,7 +181,7 @@ main{
             }
         }
         input{
-            border: 1px solid $purple-gifos;
+            border: 1px solid var(--purple-gifos);
             border-radius: 27px;  
             height: 50px;
             width: 90%; 
@@ -193,7 +204,7 @@ main{
         h4{
             margin-top: 5%;
             font-weight: 700;
-            color: $purple-gifos;
+            color: var(--purple-gifos);
             display: flex;
             align-self: center;
         }
@@ -201,7 +212,7 @@ main{
             margin: 5% 20% 0% 20%;
             text-align: center;
             font-size: 14px;
-            color: $purple-gifos;
+            color: var(--purple-gifos);
             line-height: 25px;
         }
         hr{
@@ -244,7 +255,7 @@ main{
         }
         h3{
             padding: 10px 0px 40px 0px;
-            color: $purple-gifos;
+            color: var(--purple-gifos);
             text-align: center;
         }
         #img-favoritos-sin-contenido{
@@ -295,17 +306,17 @@ main{
         align-items: center;
         width: 100%;
         height: 500px;
-        background-color: #F7F7F7;
+        background-color: var(--default-background);
         h3{
             padding-top: 20%;
             display: flex;
             text-align: center;
-            color: $purple-gifos;
+            color: var(--purple-gifos);
             font-weight: 700;
             
         }
         p{
-            
+            color: var(--color-p);
             padding-top: 5%;
             text-align: center;
             margin-bottom: 7%;
@@ -454,7 +465,7 @@ main{
             }
             h2:first-child{
                 display: block;
-                color: $purple-gifos;
+                color: var(--purple-gifos);
                 text-align: center;
                 padding: 5% 36% 0% 36%;
             }
@@ -491,14 +502,6 @@ main{
             h2{
                 padding: 6% 8% 0% 8%;
             }
-            /**div{
-                img{
-                    margin-top: unset;
-                    margin-left: 35px;
-                    width: 20%;
-                    height: 250px;
-                }
-            }*/
             section{
                 .contenedor{
                     width: 30%;
@@ -557,7 +560,7 @@ main{
                 justify-content: center;
                 width: 47.8%;
                 height: 70%;
-                border: 1px solid $purple-gifos;
+                border: 1px solid var(--purple-gifos);
                 padding: 7.5% 10% 4% 10%;
                 
                 .tamaño{
@@ -591,7 +594,7 @@ main{
                 }
                 h2{
                     text-align: center;
-                    color: $purple-gifos;
+                    color: var(--purple-gifos);
                 }
                 .color{
                     color: $green-gifos;
