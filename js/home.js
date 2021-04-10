@@ -37,6 +37,9 @@ function generarGIFO() {
                 let gifi = data.data[i].images.original.url;
                 imagenes[i].setAttribute('src', gifi);
                 username[i].innerHTML = data.data[i].username;
+                if (username[i].innerHTML == "") {
+                    username[i].innerHTML = "Sin autor";
+                }
                 title[i].innerHTML = data.data[i].title;
             }
             contenedor.style.display = "flex";
