@@ -9,28 +9,25 @@
     <link rel="stylesheet" type="text/css" href="styles/glider.min.css" />
     <link rel="stylesheet" href="styles/carrusel.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/glider.min.js"></script>
-    <script src="js/carrusel.js"></script>
-    <script src="js/script.js"></script>
     <title>HOME</title>
 </head>
 
 <body>
-    <hr color="#572EE5">
+    <hr color="#572EE5" class="hrs">
     <header>
-        <img src="assets/logo-mobile.svg">
+        <a href=""><img src="assets/logo-mobile.svg" alt="logoGIFOS" id="logoGIFOS" onclick="location.reload()"></a>
         <nav>
             <div class="menu">
                 <input type="checkbox" id="checkbox" />
-                <img src="assets/burger.svg" alt="burger">
+                <img src="assets/burger.svg" alt="burger" id="burgerMovil">
                 <ul>
-                    <li><a href="#">Modo Nocturno</a></li>
-                    <hr color="#7B5DE3">
+                    <li><a href="#" id="Nocturno">Modo Nocturno</a></li>
+                    <hr color="#7B5DE3" class="hrsBurguer">
                     <li><a href="#">Favoritos</a></li>
-                    <hr color="#7B5DE3">
+                    <hr color="#7B5DE3" class="hrsBurguer">
                     <li><a href="#">Mis GIFOS</a></li>
-                    <hr color="#7B5DE3">
-                    <a href="#"><img src="assets/button-crear-gifo.svg" alt="Crear_Gifo"></a>
+                    <hr color="#7B5DE3" class="hrsBurguer">
+                    <a href="#"><img src="assets/button-crear-gifo.svg" alt="Crear_Gifo" id="crearGIFO"></a>
                 </ul>
             </div>
         </nav>
@@ -79,8 +76,8 @@
                     <img id="imagen1" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="">
-                        <img src="assets/icon-download.svg" alt="">
+                        <img src="assets/icon-fav.svg" alt="" class="favoritosButton" onclick="GuardarGIFO('imagen1')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
                         <img onclick="togglePopUp('imagen1','user1','title1')" src="assets/icon-max-normal.svg" alt="">
                     </div>
                     <div class="user-title-hover">
@@ -94,10 +91,9 @@
                     <img id="imagen2" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="">
-                        <img src="assets/icon-download.svg" alt="">
-                        <img onclick="togglePopUp('imagen2', 'user2', 'title2')" src="assets/icon-max-normal.svg"
-                            alt="">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen2')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
+                        <img onclick="togglePopUp('imagen2')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user2" data-content=" ">User</p>
@@ -110,10 +106,9 @@
                     <img id="imagen3" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="">
-                        <img src="assets/icon-download.svg" alt="">
-                        <img onclick="togglePopUp('imagen3', 'user3', 'title3')" src="assets/icon-max-normal.svg"
-                            alt="">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen3')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
+                        <img onclick="togglePopUp('imagen3')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user3" data-content=" ">User</p>
@@ -126,10 +121,9 @@
                     <img id="imagen4" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="">
-                        <img src="assets/icon-download.svg" alt="">
-                        <img onclick="togglePopUp('imagen4', 'user4', 'title4')" src="assets/icon-max-normal.svg"
-                            alt="">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen4')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
+                        <img onclick="togglePopUp('imagen4')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user4" data-content=" ">User</p>
@@ -142,10 +136,9 @@
                     <img id="imagen5" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="">
-                        <img src="assets/icon-download.svg" alt="">
-                        <img onclick="togglePopUp('imagen5', 'user5', 'title5')" src="assets/icon-max-normal.svg"
-                            alt="">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen5')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
+                        <img onclick="togglePopUp('imagen5')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user5" data-content=" ">User</p>
@@ -158,10 +151,9 @@
                     <img id="imagen6" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="">
-                        <img src="assets/icon-download.svg" alt="">
-                        <img onclick="togglePopUp('imagen6', 'user6', 'title6')" src="assets/icon-max-normal.svg"
-                            alt="">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen6')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
+                        <img onclick="togglePopUp('imagen6')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user6" data-content=" ">User</p>
@@ -174,10 +166,9 @@
                     <img id="imagen7" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="">
-                        <img src="assets/icon-download.svg" alt="">
-                        <img onclick="togglePopUp('imagen7', 'user7', 'title7')" src="assets/icon-max-normal.svg"
-                            alt="">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen7')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
+                        <img onclick="togglePopUp('imagen7')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user7" data-content=" ">User</p>
@@ -190,10 +181,9 @@
                     <img id="imagen8" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="">
-                        <img src="assets/icon-download.svg" alt="">
-                        <img onclick="togglePopUp('imagen8', 'user8', 'title8')" src="assets/icon-max-normal.svg"
-                            alt="">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen8')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
+                        <img onclick="togglePopUp('imagen8')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user8" data-content=" ">User</p>
@@ -206,10 +196,9 @@
                     <img id="imagen9" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="">
-                        <img src="assets/icon-download.svg" alt="">
-                        <img onclick="togglePopUp('imagen9', 'user9', 'title9')" src="assets/icon-max-normal.svg"
-                            alt="">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen9')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
+                        <img onclick="togglePopUp('imagen9')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user9" data-content=" ">User</p>
@@ -222,10 +211,9 @@
                     <img id="imagen10" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="">
-                        <img src="assets/icon-download.svg" alt="">
-                        <img onclick="togglePopUp('imagen10', 'user10', 'title10')" src="assets/icon-max-normal.svg"
-                            alt="">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen10')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
+                        <img onclick="togglePopUp('imagen10')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user10" data-content=" ">User</p>
@@ -238,10 +226,9 @@
                     <img id="imagen11" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="">
-                        <img src="assets/icon-download.svg" alt="">
-                        <img onclick="togglePopUp('imagen11', 'user11', 'title11')" src="assets/icon-max-normal.svg"
-                            alt="">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen11')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
+                        <img onclick="togglePopUp('imagen11')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user11" data-content=" ">User</p>
@@ -254,10 +241,9 @@
                     <img id="imagen12" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="">
-                        <img src="assets/icon-download.svg" alt="">
-                        <img onclick="togglePopUp('imagen12', 'user12', 'title12')" src="assets/icon-max-normal.svg"
-                            alt="">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen12')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
+                        <img onclick="togglePopUp('imagen12')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user12" data-content=" ">User</p>
@@ -266,21 +252,6 @@
                 </div>
 
             </section>
-            <!-- 
-            <div>
-                <img onclick="togglePopUp()" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif" class="resultado_gifos">
-                <img onclick="togglePopUp()" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif" class="resultado_gifos">
-                <img onclick="togglePopUp()" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif" class="resultado_gifos">
-                <img onclick="togglePopUp()" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif" class="resultado_gifos">
-                <img onclick="togglePopUp()" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif" class="resultado_gifos">
-                <img onclick="togglePopUp()" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif" class="resultado_gifos">
-                <img onclick="togglePopUp()" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif" class="resultado_gifos">
-                <img onclick="togglePopUp()" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif" class="resultado_gifos">
-                <img onclick="togglePopUp()" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif" class="resultado_gifos">
-                <img onclick="togglePopUp()" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif" class="resultado_gifos">
-                <img onclick="togglePopUp()" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif" class="resultado_gifos">
-                <img onclick="togglePopUp()" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif" class="resultado_gifos">
-            </div> -->
             <a href="#" class="ver_mas"><img src="assets/CTA-ver-mas.svg" alt="Ver mas" class="ver-mas"></a>
 
         </section>
@@ -289,6 +260,14 @@
             <h2 class="change_title">Lorem Ipsum</h2>
             <img id="img-busqueda-sin-resultados" src="assets/icon-busqueda-sin-resultado.svg" alt="">
             <h5>Intenta con otra búsqueda.</h5>
+        </section>
+        <section id="Favoritos">
+            <img src="assets/icon-favoritos.svg" alt="Favoritos">
+            <h3>Favoritos</h3>
+            <div id="contenedorFavoritos">
+                
+            </div>
+            <a href="#" class="ver_mas"><img src="assets/CTA-ver-mas.svg" alt="Ver mas" class="ver-mas"></a>
         </section>
         <section id="inchange">
             <h3>Trending GIFOS</h3>
@@ -315,7 +294,6 @@
                 </div>
                 <button class="glider-prev">&laquo;</button>
                 <button class="glider-next">&raquo;</button>
-
             </div>
         </section>
     </main>
@@ -328,8 +306,12 @@
         </div>
         <p>© GIFOS 2020 All Rights Reserved.</p>
     </footer>
-    <hr color="#572EE5">
+    <hr color="#572EE5" class="hrs">
     <script src="js/home.js"></script>
+    <script src="js/nocturno.js"></script>
+    <script src="js/glider.min.js"></script>
+    <script src="js/carrusel.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

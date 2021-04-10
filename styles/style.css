@@ -19,15 +19,23 @@ p {
 
 /** TAMAÑOS **/
 /** COLORES **/
+:root {
+  --purple-gifos: #572EE5;
+  --purple-movile: #572EE5;
+  --default-background: white; }
+
 body hr {
   height: 5px;
-  width: 100%; }
+  width: 100%;
+  color: black; }
 
 header {
   padding: 7% 7% 0% 7%;
   display: flex;
   justify-content: space-between;
   width: 100%; }
+  header a {
+    margin-top: 3%; }
   header nav .menu {
     z-index: 999;
     padding-top: 3px; }
@@ -44,7 +52,7 @@ header {
       right: 0;
       overflow: hidden;
       list-style: none;
-      background: #572EE5;
+      background: var(--purple-movile);
       filter: alpha(opacity=90);
       -moz-opacity: .90;
       opacity: .90;
@@ -125,7 +133,7 @@ header {
             padding: 0px 0px 10px 25px;
             font-weight: 700;
             line-height: unset;
-            color: #572EE5; }
+            color: var(--purple-gifos); }
             header nav .menu ul li a:hover {
               color: unset; }
         header nav .menu ul img {
@@ -137,6 +145,15 @@ header {
         display: none; }
       header nav .menu img {
         display: none; } }
+:root {
+  --purple-gifos: #572EE5;
+  --purple-movile: #572EE5;
+  --default-background: white;
+  --color-p: black; }
+
+body {
+  background-color: var(--default-background); }
+
 main {
   display: flex;
   flex-flow: column wrap;
@@ -155,7 +172,7 @@ main {
     height: auto;
     padding-bottom: 6%;
     /*input{
-        border: 1px solid $purple-gifos;
+        border: 1px solid var(--purple-movile);
         border-radius: 27px;  
         height: 50px;
         width: 90%;  
@@ -172,7 +189,7 @@ main {
         }
     }*/ }
     main #Home h2 {
-      color: #572EE5;
+      color: var(--purple-gifos);
       text-align: center;
       padding: 8% 8% 0% 8%;
       font-size: 1.5em; }
@@ -189,7 +206,7 @@ main {
       width: 80%;
       align-self: center; }
       main #Home .container-busqueda input {
-        border: 1px solid #572EE5;
+        border: 1px solid var(--purple-movile);
         border-radius: 27px;
         width: 100%;
         padding: 2% 11%; }
@@ -204,14 +221,14 @@ main {
     main #Home h4 {
       padding-top: 15%;
       font-weight: 700;
-      color: #572EE5;
+      color: var(--purple-gifos);
       display: flex;
       align-self: center; }
     main #Home p {
       margin: 5% 20% 0% 20%;
       text-align: center;
       font-size: 14px;
-      color: #572EE5;
+      color: var(--purple-gifos);
       line-height: 25px; }
   main #Busqueda-sin-resultados {
     display: none;
@@ -230,7 +247,7 @@ main {
       align-self: center;
       margin-bottom: 18%; }
     main #Busqueda-sin-resultados h2 {
-      color: #572EE5;
+      color: var(--purple-gifos);
       text-align: center;
       padding: 15% 8% 0% 8%;
       margin-bottom: 10%; }
@@ -251,7 +268,7 @@ main {
     main #Busqueda .ilustra {
       display: none; }
     main #Busqueda h2 {
-      color: #572EE5;
+      color: var(--purple-gifos);
       text-align: center;
       padding: 15% 8% 0% 8%; }
     main #Busqueda img {
@@ -322,7 +339,7 @@ main {
         main #Busqueda .ver_mas img:hover {
           content: url("../assets/CTA-ver-mas-hover.svg"); }
     main #Busqueda input {
-      border: 1px solid #572EE5;
+      border: 1px solid var(--purple-gifos);
       border-radius: 27px;
       height: 50px;
       width: 90%;
@@ -341,14 +358,14 @@ main {
     main #Busqueda h4 {
       margin-top: 5%;
       font-weight: 700;
-      color: #572EE5;
+      color: var(--purple-gifos);
       display: flex;
       align-self: center; }
     main #Busqueda p {
       margin: 5% 20% 0% 20%;
       text-align: center;
       font-size: 14px;
-      color: #572EE5;
+      color: var(--purple-gifos);
       line-height: 25px; }
     main #Busqueda hr {
       align-self: center;
@@ -380,7 +397,7 @@ main {
       padding-top: 10px; }
     main #Favoritos h3 {
       padding: 10px 0px 40px 0px;
-      color: #572EE5;
+      color: var(--purple-gifos);
       text-align: center; }
     main #Favoritos #img-favoritos-sin-contenido {
       margin-top: 7.7%;
@@ -419,14 +436,15 @@ main {
     align-items: center;
     width: 100%;
     height: 500px;
-    background-color: #f7f7f7; }
+    background-color: var(--default-background); }
     main #inchange h3 {
       padding-top: 20%;
       display: flex;
       text-align: center;
-      color: #572EE5;
+      color: var(--purple-gifos);
       font-weight: 700; }
     main #inchange p {
+      color: var(--color-p);
       padding-top: 5%;
       text-align: center;
       margin-bottom: 7%; }
@@ -542,7 +560,7 @@ main {
       width: 38.3%; }
     main #Busqueda h2:first-child {
       display: block;
-      color: #572EE5;
+      color: var(--purple-gifos);
       text-align: center;
       padding: 5% 36% 0% 36%; }
     main #Busqueda .color {
@@ -618,7 +636,7 @@ main {
       justify-content: center;
       width: 47.8%;
       height: 70%;
-      border: 1px solid #572EE5;
+      border: 1px solid var(--purple-gifos);
       padding: 7.5% 10% 4% 10%; }
       main #Crear_Gifo .Contenedor .tamaño {
         width: 27px;
@@ -645,7 +663,7 @@ main {
         border-bottom: 3px solid #50E3C2; }
       main #Crear_Gifo .Contenedor h2 {
         text-align: center;
-        color: #572EE5; }
+        color: var(--purple-gifos); }
       main #Crear_Gifo .Contenedor .color {
         color: #50E3C2; }
       main #Crear_Gifo .Contenedor p {
@@ -749,6 +767,9 @@ main {
     width: 30%; }
   main #gif-max {
     width: 30%; } }
+:root {
+  --color-p: black; }
+
 footer {
   width: 100%;
   height: 150px;
@@ -756,6 +777,7 @@ footer {
   flex-flow: column wrap;
   align-items: center; }
   footer p {
+    color: var(--color-p);
     padding-top: 10%; }
   footer div img {
     margin-left: 10px;

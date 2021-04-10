@@ -1,4 +1,4 @@
-alert('funciona');
+alert('funciona')
 
 let lupa = document.getElementsByClassName('search')[0];
 let contenedor = document.getElementById('Busqueda');
@@ -9,6 +9,10 @@ let change_title_2 = document.getElementsByClassName('change_title')[1];
 let imagenes = document.getElementsByClassName('resultado_gifos');
 let username = document.getElementsByClassName('user_GIFO');
 let title = document.getElementsByClassName('title_GIFO');
+let favoritos = document.getElementsByClassName('favoritosButton');
+let contenedorFavoritos = document.getElementById('contenedorFavoritos');
+let FavoritosCon = document.getElementById('Favoritos');
+
 
 lupa.addEventListener('click', () => {
     generarGIFO();
@@ -32,25 +36,43 @@ function generarGIFO() {
     promesaGif
         .then(data => {
             contenedor.style.display = "none";
+            sinResultado.style.display = "none";
             for (let i = 0; i < imagenes.length; i++) {
                 imagenes[i].setAttribute('src', 'https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif');
                 let gifi = data.data[i].images.original.url;
-                imagenes[i].setAttribute('src', gifi);
                 username[i].innerHTML = data.data[i].username;
                 if (username[i].innerHTML == "") {
                     username[i].innerHTML = "Sin autor";
                 }
                 title[i].innerHTML = data.data[i].title;
+                imagenes[i].setAttribute('src', gifi);
+                //----------------------------------------------//
             }
             contenedor.style.display = "flex";
             change_title.innerHTML = input_gifo.value;
+            
+            
         })
         .catch(error => {
             alert(error)
             sinResultado.style.display = "flex";
             change_title_2.innerHTML = input_gifo.value;
         });
-
 }
 
 
+function GuardarGIFO(id){
+    let imagenFav = document.createElement('img');
+    let gifi = $('#'+id).attr('src');
+    imagenFav.setAttribute('src', gifi);
+    contenedorFavoritos.appendChild(imagenFav);  
+}
+
+for (let i = 0; i < favoritos.length; i++) {
+    favoritos[i].addEventListener('click', () => {
+        let gifi = data.data[i].images.original.url;
+        let imagenFav = document.createElement('img');
+        imagenFav.setAttribute('src', gifi)
+        contenedorFavoritos.appendChild(imagenFav);  
+    })
+}
