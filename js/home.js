@@ -44,6 +44,9 @@ function generarGIFO() {
             for (let i = 0; i < imagenes.length; i++) {
                 let gifi = data.data[i].images.original.url;
                 username[i].innerHTML = data.data[i].username;
+                if (username[i].innerHTML == "") {
+                    username[i].innerHTML = "Sin autor";
+                }
                 title[i].innerHTML = data.data[i].title;
                 imagenes[i].setAttribute('src', gifi);
                 //----------------------------------------------//

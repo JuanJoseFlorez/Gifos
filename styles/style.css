@@ -169,34 +169,55 @@ main {
     display: flex;
     flex-flow: column wrap;
     width: 100%;
-    height: 480px; }
+    height: auto;
+    padding-bottom: 6%;
+    /*input{
+        border: 1px solid var(--purple-movile);
+        border-radius: 27px;  
+        height: 50px;
+        width: 90%;  
+        margin-left: 5%;
+        padding-left: 11%;
+    }
+    .search{
+        display: flex;
+        img{
+            padding: unset;
+            display: flex;
+            width: 20px;
+            z-index: 2;
+        }
+    }*/ }
     main #Home h2 {
       color: var(--purple-gifos);
       text-align: center;
-      padding: 8% 8% 0% 8%; }
+      padding: 8% 8% 0% 8%;
+      font-size: 1.5em; }
     main #Home .color-home {
       color: #50E3C2; }
     main #Home img {
       display: flex;
       align-self: center;
       padding-top: 7%;
-      width: 273px; }
-    main #Home input {
-      border: 1px solid var(--purple-movile);
-      border-radius: 27px;
-      height: 50px;
-      width: 90%;
-      margin-left: 5%;
-      padding-left: 11%; }
-    main #Home .search {
-      display: flex; }
-      main #Home .search img {
-        padding: unset;
-        margin-left: 48%;
-        margin-top: 5%;
+      width: 60%;
+      height: auto; }
+    main #Home .container-busqueda {
+      position: relative;
+      width: 80%;
+      align-self: center; }
+      main #Home .container-busqueda input {
+        border: 1px solid var(--purple-movile);
+        border-radius: 27px;
+        width: 100%;
+        padding: 2% 11%; }
+      main #Home .container-busqueda .search {
         display: flex;
-        width: 20px;
-        z-index: 2; }
+        right: 20px;
+        top: 7px;
+        width: 4%;
+        position: absolute; }
+        main #Home .container-busqueda .search img {
+          width: 100%; }
     main #Home h4 {
       padding-top: 15%;
       font-weight: 700;
@@ -237,7 +258,7 @@ main {
       width: 157px;
       text-align: center;
       display: flex;
-      opacity: .50; }
+      opacity: 0.5; }
   main #Busqueda {
     display: none;
     flex-flow: column wrap;
@@ -266,6 +287,7 @@ main {
       flex-flow: wrap; }
       main #Busqueda section .contenedor {
         width: 40%;
+        height: auto;
         margin: 1%;
         position: relative;
         display: flex;
@@ -274,21 +296,38 @@ main {
           filter: contrast(100%) sepia(1) hue-rotate(220deg) saturate(1000%); }
         main #Busqueda section .contenedor:hover .botonesImg {
           opacity: 1; }
+        main #Busqueda section .contenedor:hover .user-title-hover {
+          opacity: 1; }
         main #Busqueda section .contenedor img {
           min-width: 100%;
-          display: block;
-          backface-visibility: hidden; }
+          display: block; }
         main #Busqueda section .contenedor .botonesImg {
-          transition: .5s ease;
+          transition: 0.5s ease;
           position: absolute;
           display: flex;
           top: 10%;
-          opacity: 0; }
+          opacity: 0;
+          right: 1px; }
           main #Busqueda section .contenedor .botonesImg img {
-            min-width: 40px;
+            min-width: 20px;
+            height: auto;
             margin: unset;
             padding: 3%;
             cursor: pointer; }
+        main #Busqueda section .contenedor .user-title-hover {
+          opacity: 0;
+          position: absolute;
+          top: 60%;
+          left: 0;
+          width: 50%; }
+          main #Busqueda section .contenedor .user-title-hover p {
+            width: 100%;
+            display: block;
+            color: #fff;
+            text-align: justify;
+            margin: 0px;
+            padding-left: 10px;
+            font-size: 0.5em; }
     main #Busqueda .ver_mas {
       display: flex;
       align-self: center; }
@@ -329,13 +368,12 @@ main {
       color: var(--purple-gifos);
       line-height: 25px; }
     main #Busqueda hr {
-      margin-top: 10%;
       align-self: center;
       height: 1px;
       width: 157px;
       text-align: center;
       display: flex;
-      opacity: .50; }
+      opacity: 0.5; }
     main #Busqueda #casilla-busqueda {
       margin: unset;
       position: relative;
@@ -462,20 +500,28 @@ main {
 
 @media screen and (min-width: 720px) {
   main #Home {
-    height: 500px; }
+    text-align: center;
+    /*.search {
+        margin: -4.4% 0% 0% 34%;
+    }*/
+    /*input {
+        margin: unset;
+        padding-left: 5%;
+        align-self: center;
+        width: 38.3%;
+    }*/ }
     main #Home img {
       padding-top: 2%;
-      width: 27%;
+      width: 40%;
       height: auto; }
-    main #Home .search {
-      margin: -4.4% 0% 0% 34%; }
     main #Home h2 {
-      padding: 5% 36% 0% 36%; }
-    main #Home input {
-      margin: unset;
-      padding-left: 5%;
-      align-self: center;
-      width: 38.3%; }
+      font-size: 2em; }
+    main #Home .container-busqueda {
+      width: 60%; }
+      main #Home .container-busqueda .search {
+        right: 30px;
+        top: 10px;
+        width: 3%; }
     main #Home h4 {
       padding: 6% 0px 0px 0px; }
     main #Home p {
@@ -490,61 +536,84 @@ main {
     margin: unset; }
   main #Busqueda-sin-resultados hr {
     margin: unset; }
-  main #Busqueda .color-home {
-    color: #50E3C2; }
-  main #Busqueda .ver_mas {
-    margin: 15% 0px 5% 0px;
-    padding: unset; }
-    main #Busqueda .ver_mas img {
-      margin: unset;
+  main #Busqueda {
+    /**div{
+        img{
+            margin-top: unset;
+            margin-left: 35px;
+            width: 20%;
+            height: 250px;
+        }
+    }*/ }
+    main #Busqueda .color-home {
+      color: #50E3C2; }
+    main #Busqueda .ver_mas {
+      margin: 15% 0px 5% 0px;
       padding: unset; }
-  main #Busqueda input {
-    margin: unset;
-    padding-left: 5%;
-    align-self: center;
-    width: 38.3%; }
-  main #Busqueda h2:first-child {
-    display: block;
-    color: var(--purple-gifos);
-    text-align: center;
-    padding: 5% 36% 0% 36%; }
-  main #Busqueda .color {
-    color: #50E3C2; }
-  main #Busqueda .ilustra {
-    display: flex;
-    align-self: center;
-    padding-top: 2%;
-    width: 27%;
-    height: auto; }
-  main #Busqueda .search img {
-    margin-left: 66%;
-    margin-top: -5%; }
-  main #Busqueda input {
-    margin: unset;
-    padding-left: 5%;
-    align-self: center;
-    width: 38.3%; }
-  main #Busqueda h4 {
-    display: none; }
-  main #Busqueda p {
-    display: none; }
-  main #Busqueda h2 {
-    padding: 6% 8% 0% 8%; }
-  main #Busqueda section .contenedor {
-    width: 30%; }
-    main #Busqueda section .contenedor img {
-      height: 250px; }
-    main #Busqueda section .contenedor .botonesImg {
-      top: -38%; }
-      main #Busqueda section .contenedor .botonesImg img {
-        filter: none;
-        min-width: 40px; }
-  main #Busqueda img {
-    padding-top: 4%; }
-  main #Busqueda hr {
-    margin-top: 5%; }
-  main #Busqueda #casilla-busqueda img {
-    margin-left: -4%; }
+      main #Busqueda .ver_mas img {
+        margin: unset;
+        padding: unset; }
+    main #Busqueda input {
+      margin: unset;
+      padding-left: 5%;
+      align-self: center;
+      width: 38.3%; }
+    main #Busqueda h2:first-child {
+      display: block;
+      color: var(--purple-gifos);
+      text-align: center;
+      padding: 5% 36% 0% 36%; }
+    main #Busqueda .color {
+      color: #50E3C2; }
+    main #Busqueda .ilustra {
+      display: flex;
+      align-self: center;
+      padding-top: 2%;
+      width: 27%;
+      height: auto; }
+    main #Busqueda .search img {
+      margin-left: 66%;
+      margin-top: -5%; }
+    main #Busqueda input {
+      margin: unset;
+      padding-left: 5%;
+      align-self: center;
+      width: 38.3%; }
+    main #Busqueda h4 {
+      display: none; }
+    main #Busqueda p {
+      display: none; }
+    main #Busqueda h2 {
+      padding: 6% 8% 0% 8%; }
+    main #Busqueda section .contenedor {
+      width: 30%; }
+      main #Busqueda section .contenedor img {
+        height: 250px; }
+      main #Busqueda section .contenedor .botonesImg {
+        top: 3%; }
+        main #Busqueda section .contenedor .botonesImg img {
+          filter: none;
+          min-width: 40px; }
+      main #Busqueda section .contenedor .user-title-hover {
+        opacity: 0;
+        position: absolute;
+        top: 70%;
+        left: 0;
+        width: 80%; }
+        main #Busqueda section .contenedor .user-title-hover p {
+          width: 100%;
+          display: block;
+          color: #fff;
+          text-align: justify;
+          margin: 0px;
+          padding-left: 10px;
+          font-size: 0.8em;
+          line-height: 1.5;
+          font-weight: bold; }
+    main #Busqueda img {
+      padding-top: 4%; }
+    main #Busqueda #casilla-busqueda img {
+      margin-left: -4%; }
   main #Favoritos div img {
     margin-top: unset;
     margin-left: 35px;
@@ -616,10 +685,10 @@ main {
       margin-left: -31%; }
     main #Crear_Gifo img {
       width: 110px; }
-    main #Crear_Gifo .comenzar {
+    main #Crear_Gifo .create {
       margin-top: 440px;
       margin-left: -440px; }
-      main #Crear_Gifo .comenzar:hover {
+      main #Crear_Gifo .create:hover {
         content: url("../assets/CTA-comenzar-hover.svg"); }
     main #Crear_Gifo .grabar {
       margin-top: 440px;
@@ -665,19 +734,44 @@ main {
   #gif-max {
     width: 10%; } }
 @media screen and (min-width: 1200px) {
-  main #Home {
-    height: 550px; }
+  main #Home h2 {
+    padding: 0% 35%;
+    font-size: 2em; }
+  main #Home img {
+    width: 20%; }
+  main #Home .container-busqueda {
+    width: 40%; }
+    main #Home .container-busqueda .search {
+      right: 30px;
+      top: 15px;
+      width: 2%; }
   main #Busqueda #casilla-busqueda img {
     margin-left: -3%; }
   main #Busqueda section .contenedor {
+    position: relative;
     width: 20%; }
     main #Busqueda section .contenedor img {
       height: 250px; }
     main #Busqueda section .contenedor .botonesImg {
-      top: -36%; }
+      top: 5%; }
       main #Busqueda section .contenedor .botonesImg img {
         filter: none;
         min-width: 40px; }
+    main #Busqueda section .contenedor .user-title-hover {
+      opacity: 0;
+      position: absolute;
+      top: 60%;
+      left: 0;
+      width: 80%; }
+      main #Busqueda section .contenedor .user-title-hover p {
+        width: 100%;
+        display: block;
+        color: #fff;
+        text-align: justify;
+        margin: 0px;
+        padding-left: 10px;
+        font-size: 1em;
+        font-weight: bold; }
   main .popup .close-btn {
     right: 35%;
     top: -40px; }
