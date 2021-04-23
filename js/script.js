@@ -1,8 +1,3 @@
-/**
- * Para la seccion de crear GIFOS
- */
-
-let changeButton = document.getElementById('changeButton');
 
 changeButton.addEventListener('click', () => {
     let changeTitle = document.getElementById('changeTitle');

@@ -756,7 +756,29 @@ main {
                     content: url("../assets/CTA-comenzar-hover.svg");
                 }
             }
-            .hr_gifos {
+            .grabar{
+                margin-top: 440px;
+                margin-left: -440px;
+                &:hover{
+                    content: url("../assets/CTA-grabar-hover.svg");
+                }
+            }
+            .finalizar{
+                margin-top: 440px;
+                margin-left: -440px;
+                &:hover{
+                    content: url("../assets/CTA-finalizar-hover.svg");
+                }
+            }
+            .subir-gifo{
+                margin-top: 440px;
+                margin-left: -440px;
+                &:hover{
+                    content: url("../assets/CTA-subir-gifo-hover.svg");
+                }
+            }
+           
+            .hr_gifos{
                 width: 53%;
                 height: 7px;
                 border-radius: 10px;

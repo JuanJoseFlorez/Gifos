@@ -737,6 +737,21 @@ main {
       margin-left: -440px; }
       main #Crear_Gifo .create:hover {
         content: url("../assets/CTA-comenzar-hover.svg"); }
+    main #Crear_Gifo .grabar {
+      margin-top: 440px;
+      margin-left: -440px; }
+      main #Crear_Gifo .grabar:hover {
+        content: url("../assets/CTA-grabar-hover.svg"); }
+    main #Crear_Gifo .finalizar {
+      margin-top: 440px;
+      margin-left: -440px; }
+      main #Crear_Gifo .finalizar:hover {
+        content: url("../assets/CTA-finalizar-hover.svg"); }
+    main #Crear_Gifo .subir-gifo {
+      margin-top: 440px;
+      margin-left: -440px; }
+      main #Crear_Gifo .subir-gifo:hover {
+        content: url("../assets/CTA-subir-gifo-hover.svg"); }
     main #Crear_Gifo .hr_gifos {
       width: 53%;
       height: 7px;
@@ -889,3 +904,5 @@ footer {
       display: flex; }
       footer div a {
         margin-bottom: 14%; } }
+
+/*# sourceMappingURL=style.css.map */

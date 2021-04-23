@@ -20,6 +20,9 @@ lupa.addEventListener('click', () => {
 
 input_gifo.addEventListener('keydown', (event) => {
     if (event.key === "Enter") {
+        for (let i = 0; i < imagenes.length; i++) {
+            imagenes[i].setAttribute('src', 'https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif');
+        }
         generarGIFO();
     }
 })
@@ -37,8 +40,8 @@ function generarGIFO() {
         .then(data => {
             contenedor.style.display = "none";
             sinResultado.style.display = "none";
+
             for (let i = 0; i < imagenes.length; i++) {
-                imagenes[i].setAttribute('src', 'https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif');
                 let gifi = data.data[i].images.original.url;
                 username[i].innerHTML = data.data[i].username;
                 if (username[i].innerHTML == "") {
@@ -50,8 +53,8 @@ function generarGIFO() {
             }
             contenedor.style.display = "flex";
             change_title.innerHTML = input_gifo.value;
-            
-            
+
+
         })
         .catch(error => {
             alert(error)
@@ -109,16 +112,21 @@ function GuardarGIFO(id, userId, titleId){
     localStorage.setItem('urlFav', JSON.stringify(dataUrl));
     localStorage.setItem('userFav', JSON.stringify(dataUser));
     localStorage.setItem('titleFav', JSON.stringify(dataTitle));
-    
-    //imagenFav.setAttribute('src', gifi);
-    //contenedorFavoritos.appendChild(imagenFav);
 }
 
-/*for (let i = 0; i < favoritos.length; i++) {
-    favoritos[i].addEventListener('click', () => {
-        let gifi = data.data[i].images.original.url;
-        let imagenFav = document.createElement('img');
-        imagenFav.setAttribute('src', gifi)
-        contenedorFavoritos.appendChild(imagenFav);  
-    })
-}*/
+async function descargarGIFO(id) {
+    let gifi = $('#' + id).attr('src');
+    //create new a element
+    let a = document.createElement('a');
+    // get image as blob
+    let response = await fetch(gifi);
+    console.log(response)
+    let file = await response.blob();
+    // use download attribute https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Attributes
+    a.download = 'GIFO_of_' + input_gifo.value;
+    a.href = window.URL.createObjectURL(file);
+    //store download url in javascript https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes#JavaScript_access
+    a.dataset.downloadurl = ['application/octet-stream', a.download, a.href].join(':');
+    //click on element to start download
+    a.click();
+}
