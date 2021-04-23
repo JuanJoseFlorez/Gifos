@@ -146,8 +146,8 @@ header {
       header nav .menu img {
         display: none; } }
 :root {
-  --purple-gifos: #572EE5;
-  --purple-movile: #572EE5;
+  --purple-gifos: #572ee5;
+  --purple-movile: #572ee5;
   --default-background: white;
   --color-p: black; }
 
@@ -393,6 +393,53 @@ main {
     display: flex;
     flex-flow: column wrap;
     width: 100%; }
+    main #Favoritos section {
+      padding-left: 6%;
+      display: flex;
+      flex-flow: wrap; }
+      main #Favoritos section .contenedor {
+        width: 40%;
+        height: auto;
+        margin: 1%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end; }
+        main #Favoritos section .contenedor:hover img {
+          filter: contrast(100%) sepia(1) hue-rotate(220deg) saturate(1000%); }
+        main #Favoritos section .contenedor:hover .botonesImg {
+          opacity: 1; }
+        main #Favoritos section .contenedor:hover .user-title-hover {
+          opacity: 1; }
+        main #Favoritos section .contenedor img {
+          min-width: 100%;
+          display: block; }
+        main #Favoritos section .contenedor .botonesImg {
+          transition: 0.5s ease;
+          position: absolute;
+          display: flex;
+          top: 10%;
+          opacity: 0;
+          right: 1px; }
+          main #Favoritos section .contenedor .botonesImg img {
+            min-width: 20px;
+            height: auto;
+            margin: unset;
+            padding: 3%;
+            cursor: pointer; }
+        main #Favoritos section .contenedor .user-title-hover {
+          opacity: 0;
+          position: absolute;
+          top: 60%;
+          left: 0;
+          width: 50%; }
+          main #Favoritos section .contenedor .user-title-hover p {
+            width: 100%;
+            display: block;
+            color: #fff;
+            text-align: justify;
+            margin: 0px;
+            padding-left: 10px;
+            font-size: 0.5em; }
     main #Favoritos img {
       padding-top: 10px; }
     main #Favoritos h3 {
@@ -413,13 +460,11 @@ main {
       text-align: center;
       align-self: center;
       margin-bottom: 18%; }
-    main #Favoritos div {
-      padding-left: 6%; }
-      main #Favoritos div img {
-        margin-left: 15px;
-        margin-bottom: 15px;
-        display: unset;
-        width: 40%; }
+    main #Favoritos div img {
+      margin-left: 15px;
+      margin-bottom: 15px;
+      display: unset;
+      width: 40%; }
     main #Favoritos .ver_mas {
       display: flex;
       align-self: center; }
@@ -494,6 +539,8 @@ main {
   main .popup.active .content {
     transition: all 800ms ease-in-out;
     transform: translate(-50%, -50%) scale(1); }
+    main .popup.active .content #gif-max {
+      height: 250px; }
   main #gif-max {
     width: 100%;
     height: auto; }
@@ -715,6 +762,9 @@ main {
     justify-content: center; }
   .popup section {
     width: 100%; }
+  .popup .content #gif-max {
+    height: 350px;
+    width: 80%; }
 
   #gif-max {
     width: 10%; } }
@@ -757,6 +807,41 @@ main {
         padding-left: 10px;
         font-size: 1em;
         font-weight: bold; }
+  main #Favoritos section .contenedor {
+    padding-left: unset;
+    position: relative;
+    width: 20%; }
+    main #Favoritos section .contenedor img {
+      height: 250px; }
+    main #Favoritos section .contenedor .botonesImg {
+      top: 5%;
+      /*img.favoritosButton{
+          min-width: 35px;
+          border-radius: 5px;
+          background-color: #FFEBFF;
+          margin: 2% 2.5%;
+          padding: 0% 8%;
+      }*/ }
+      main #Favoritos section .contenedor .botonesImg img.favoritosButton {
+        fill: purple; }
+      main #Favoritos section .contenedor .botonesImg img {
+        filter: none;
+        min-width: 40px; }
+    main #Favoritos section .contenedor .user-title-hover {
+      opacity: 0;
+      position: absolute;
+      top: 60%;
+      left: 0;
+      width: 80%; }
+      main #Favoritos section .contenedor .user-title-hover p {
+        width: 100%;
+        display: block;
+        color: #fff;
+        text-align: justify;
+        margin: 0px;
+        padding-left: 10px;
+        font-size: 1em;
+        font-weight: bold; }
   main .popup .close-btn {
     right: 35%;
     top: -40px; }
@@ -764,6 +849,9 @@ main {
     display: flex;
     justify-content: center; }
   main .popup section {
+    width: 30%; }
+  main .popup.active .content #gif-max {
+    height: 450px;
     width: 30%; }
   main #gif-max {
     width: 30%; } }

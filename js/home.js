@@ -60,19 +60,65 @@ function generarGIFO() {
         });
 }
 
-
-function GuardarGIFO(id){
-    let imagenFav = document.createElement('img');
+let urlFav = [];
+let userFav = [];
+let titleFav = [];
+function GuardarGIFO(id, userId, titleId){
+    let añadir = new Boolean (false);
     let gifi = $('#'+id).attr('src');
-    imagenFav.setAttribute('src', gifi);
-    contenedorFavoritos.appendChild(imagenFav);  
+    let user = document.getElementById(userId);
+    let title = document.getElementById(titleId);
+    let dataUrl = JSON.parse(localStorage.getItem("urlFav"));
+    let dataUser = JSON.parse(localStorage.getItem("userFav"));
+    let dataTitle = JSON.parse(localStorage.getItem("titleFav"));
+    if(dataUrl==null){
+        localStorage.setItem('urlFav', JSON.stringify(urlFav));
+        localStorage.setItem('userFav', JSON.stringify(userFav));
+        localStorage.setItem('titleFav', JSON.stringify(titleFav));
+        dataUrl = JSON.parse(localStorage.getItem("urlFav"));
+        dataUser = JSON.parse(localStorage.getItem("userFav"));
+        dataTitle = JSON.parse(localStorage.getItem("titleFav"));
+        dataUrl.push(gifi);
+        dataUser.push(user.innerHTML);
+        dataTitle.push(title.innerHTML);
+    } else if(dataUrl.length==0){
+        dataUrl.push(gifi);
+        dataUser.push(user.innerHTML);
+        dataTitle.push(title.innerHTML);
+        alert("Añadido correctamente");
+    }
+    else{
+        dataUrl = JSON.parse(localStorage.getItem("urlFav"));
+        for(let j = 0; j<dataUrl.length;j++){
+            if(gifi!=dataUrl[j]){
+                añadir = true;
+            }else{
+                añadir = false;
+                alert("Ya esta en favoritos");
+                break;
+            }
+        }
+        if(añadir==true){
+            dataUrl.push(gifi);
+            dataUser.push(user.innerHTML);
+            dataTitle.push(title.innerHTML);
+            alert("Añadido correctamente");
+        }
+        
+    }
+    localStorage.setItem('urlFav', JSON.stringify(dataUrl));
+    localStorage.setItem('userFav', JSON.stringify(dataUser));
+    localStorage.setItem('titleFav', JSON.stringify(dataTitle));
+    
+    //imagenFav.setAttribute('src', gifi);
+    //contenedorFavoritos.appendChild(imagenFav);
 }
 
-for (let i = 0; i < favoritos.length; i++) {
+/*for (let i = 0; i < favoritos.length; i++) {
     favoritos[i].addEventListener('click', () => {
         let gifi = data.data[i].images.original.url;
         let imagenFav = document.createElement('img');
         imagenFav.setAttribute('src', gifi)
         contenedorFavoritos.appendChild(imagenFav);  
     })
-}
+}*/

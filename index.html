@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    
     <link rel="stylesheet" type="text/css" href="styles/glider.min.css" />
     <link rel="stylesheet" href="styles/carrusel.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>HOME</title>
 </head>
@@ -23,7 +24,7 @@
                 <ul>
                     <li><a href="#" id="Nocturno">Modo Nocturno</a></li>
                     <hr color="#7B5DE3" class="hrsBurguer">
-                    <li><a href="#">Favoritos</a></li>
+                    <li><a href="favoritos.html">Favoritos</a></li>
                     <hr color="#7B5DE3" class="hrsBurguer">
                     <li><a href="#">Mis GIFOS</a></li>
                     <hr color="#7B5DE3" class="hrsBurguer">
@@ -76,7 +77,7 @@
                     <img id="imagen1" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="" class="favoritosButton" onclick="GuardarGIFO('imagen1')">
+                        <img src="assets/icon-fav.svg" alt="" class="favoritosButton" onclick="GuardarGIFO('imagen1','user1','title1')">
                         <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
                         <img onclick="togglePopUp('imagen1','user1','title1')" src="assets/icon-max-normal.svg" alt="">
                     </div>
@@ -91,9 +92,9 @@
                     <img id="imagen2" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen2')">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen2','user2','title2')">
                         <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
-                        <img onclick="togglePopUp('imagen2')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                        <img onclick="togglePopUp('imagen2','user2','title2')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user2" data-content=" ">User</p>
@@ -106,9 +107,9 @@
                     <img id="imagen3" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen3')">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen3','user3','title3')">
                         <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
-                        <img onclick="togglePopUp('imagen3')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                        <img onclick="togglePopUp('imagen3','user3','title3')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user3" data-content=" ">User</p>
@@ -121,9 +122,9 @@
                     <img id="imagen4" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen4')">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen4','user4','title4')">
                         <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
-                        <img onclick="togglePopUp('imagen4')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                        <img onclick="togglePopUp('imagen4','user4','title4')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user4" data-content=" ">User</p>
@@ -136,9 +137,9 @@
                     <img id="imagen5" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen5')">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen5','user5','title5')">
                         <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
-                        <img onclick="togglePopUp('imagen5')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                        <img onclick="togglePopUp('imagen5','user5','title5')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user5" data-content=" ">User</p>
@@ -151,9 +152,9 @@
                     <img id="imagen6" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen6')">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen6','user6','title6')">
                         <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
-                        <img onclick="togglePopUp('imagen6')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                        <img onclick="togglePopUp('imagen6','user6','title6')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user6" data-content=" ">User</p>
@@ -166,9 +167,9 @@
                     <img id="imagen7" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen7')">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen7','user7','title7')">
                         <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
-                        <img onclick="togglePopUp('imagen7')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                        <img onclick="togglePopUp('imagen7','user7','title7')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user7" data-content=" ">User</p>
@@ -181,9 +182,9 @@
                     <img id="imagen8" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen8')">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen8','user8','title8')">
                         <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
-                        <img onclick="togglePopUp('imagen8')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                        <img onclick="togglePopUp('imagen8','user8','title8')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user8" data-content=" ">User</p>
@@ -196,9 +197,9 @@
                     <img id="imagen9" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen9')">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen9','user9','title9')">
                         <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
-                        <img onclick="togglePopUp('imagen9')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                        <img onclick="togglePopUp('imagen9','user9','title9')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user9" data-content=" ">User</p>
@@ -211,9 +212,9 @@
                     <img id="imagen10" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen10')">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen10','user10','title10')">
                         <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
-                        <img onclick="togglePopUp('imagen10')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                        <img onclick="togglePopUp('imagen10','user10','title10')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user10" data-content=" ">User</p>
@@ -226,9 +227,9 @@
                     <img id="imagen11" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen11')">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen11','user11','title11')">
                         <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
-                        <img onclick="togglePopUp('imagen11')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                        <img onclick="togglePopUp('imagen11','user11','title11')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user11" data-content=" ">User</p>
@@ -241,9 +242,9 @@
                     <img id="imagen12" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
-                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen12')">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen12','user12','title12')">
                         <img src="assets/icon-download.svg" alt="descarga" class="descargaButton">
-                        <img onclick="togglePopUp('imagen12')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                        <img onclick="togglePopUp('imagen12','user12','title12')" src="assets/icon-max-normal.svg" alt="ImgMax">
                     </div>
                     <div class="user-title-hover">
                         <p class="user_GIFO" id="user12" data-content=" ">User</p>
