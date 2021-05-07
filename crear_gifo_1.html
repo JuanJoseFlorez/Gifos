@@ -26,7 +26,7 @@
                     <hr color="#7B5DE3">
                     <li><a href="#">Favoritos</a></li>
                     <hr color="#7B5DE3">
-                    <li><a href="#">Mis GIFOS</a></li>
+                    <li><a href="mis-gifos.html">Mis GIFOS</a></li>
                     <hr color="#7B5DE3">
                     <a href="#"><img src="assets/CTA-crear-gifo-active.svg" alt="Crear_Gifo"></a>
                 </ul>
@@ -42,7 +42,7 @@
                 <h2 id="changeTitle">Aquí podrás<br> crear tus propios<span class="color"> GIFOS</span></h2>
                 <p id="changeP">¡Crea tu GIFO en sólo 3 pasos!<br>(sólo necesitas una cámara para grabar un video)</p>
                 <div class="video-wrap">
-                    <video id="video" playsinline autoplay></video>
+                    <video src="" id="video" playsinline autoplay></video>
                 </div>
             </div>
             <img src="assets/pelicula.svg" alt="pelicula" class="pelicula">
@@ -50,10 +50,10 @@
             <img src="assets/paso-a-paso-2.svg" alt="Two" class="pasos">
             <img src="assets/paso-a-paso.svg" alt="One" class="pasos">
             <hr color="#572EE5" class="hr_gifos">
-            <a href="#"><img src="assets/CTA-comenzar.svg" alt="comenzar" class="comenzar"></a>
+            <a href="#"><img src="assets/CTA-comenzar.svg" alt="comenzar" class="comenzar" onclick="getStreamAndRecord()"></a>
             <a href="#"><img src="assets/CTA-crear-gifo-active-modo-noc.svg" class="dar_acceso" style="display: none;"></a>
-            <a href="#"><img src="assets/CTA-grabar.svg" class="grabar" style="display: none;"></a>
-            <a href="#"><img src="assets/CTA-finalizar.svg" class="finalizar" style="display: none;"></a>
+            <a href="#"><img src="assets/CTA-grabar.svg" class="grabar" style="display: none" onclick="iniciarGrabacion()"></a>
+            <a href="#"><img src="assets/CTA-finalizar.svg" class="finalizar" style="display: none" onclick="detenerGrabacion()"></a>
             <a href="#"><img src="assets/CTA-subir-gifo.svg" class="subir-gifo" style="display: none;"></a>
         </section>
 
@@ -68,6 +68,7 @@
         <p>© GIFOS 2020 All Rights Reserved.</p>
     </footer>
     <hr color="#572EE5">
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
     <script src="js/crearGIFO.js"></script>
 </body>
 

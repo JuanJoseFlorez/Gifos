@@ -31,6 +31,10 @@ function escribir(url, id, user, title) {
 
 function eliminarDato(id){
     dataUrl.splice(id, 1);
+    dataUser.splice(id, 1);
+    dataTitle.splice(id, 1);
+    localStorage.setItem('userFav', JSON.stringify(dataUser));
     localStorage.setItem('urlFav', JSON.stringify(dataUrl));
+    localStorage.setItem('titleFav', JSON.stringify(dataTitle));
     location.reload();
 }

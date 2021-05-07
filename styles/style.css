@@ -822,41 +822,43 @@ main {
         padding-left: 10px;
         font-size: 1em;
         font-weight: bold; }
-  main #Favoritos section .contenedor {
-    padding-left: unset;
-    position: relative;
-    width: 20%; }
-    main #Favoritos section .contenedor img {
-      height: 250px; }
-    main #Favoritos section .contenedor .botonesImg {
-      top: 5%;
-      /*img.favoritosButton{
-          min-width: 35px;
-          border-radius: 5px;
-          background-color: #FFEBFF;
-          margin: 2% 2.5%;
-          padding: 0% 8%;
-      }*/ }
-      main #Favoritos section .contenedor .botonesImg img.favoritosButton {
-        fill: purple; }
-      main #Favoritos section .contenedor .botonesImg img {
-        filter: none;
-        min-width: 40px; }
-    main #Favoritos section .contenedor .user-title-hover {
-      opacity: 0;
-      position: absolute;
-      top: 60%;
-      left: 0;
-      width: 80%; }
-      main #Favoritos section .contenedor .user-title-hover p {
-        width: 100%;
-        display: block;
-        color: #fff;
-        text-align: justify;
-        margin: 0px;
-        padding-left: 10px;
-        font-size: 1em;
-        font-weight: bold; }
+  main #Favoritos section {
+    width: 100%; }
+    main #Favoritos section .contenedor {
+      padding-left: unset;
+      position: relative; }
+      main #Favoritos section .contenedor wi
+      img {
+        height: 250px; }
+      main #Favoritos section .contenedor .botonesImg {
+        top: 5%;
+        /*img.favoritosButton{
+            min-width: 35px;
+            border-radius: 5px;
+            background-color: #FFEBFF;
+            margin: 2% 2.5%;
+            padding: 0% 8%;
+        }*/ }
+        main #Favoritos section .contenedor .botonesImg img.favoritosButton {
+          fill: purple; }
+        main #Favoritos section .contenedor .botonesImg img {
+          filter: none;
+          min-width: 40px; }
+      main #Favoritos section .contenedor .user-title-hover {
+        opacity: 0;
+        position: absolute;
+        top: 60%;
+        left: 0;
+        width: 80%; }
+        main #Favoritos section .contenedor .user-title-hover p {
+          width: 100%;
+          display: block;
+          color: #fff;
+          text-align: justify;
+          margin: 0px;
+          padding-left: 10px;
+          font-size: 1em;
+          font-weight: bold; }
   main .popup .close-btn {
     right: 35%;
     top: -40px; }
@@ -904,5 +906,3 @@ footer {
       display: flex; }
       footer div a {
         margin-bottom: 14%; } }
-
-/*# sourceMappingURL=style.css.map */
