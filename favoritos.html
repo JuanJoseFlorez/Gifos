@@ -26,7 +26,7 @@
                     <hr color="#7B5DE3">
                     <li><a href="#">Favoritos</a></li>
                     <hr color="#7B5DE3">
-                    <li><a href="#">Mis GIFOS</a></li>
+                    <li><a href="mis-gifos.html">Mis GIFOS</a></li>
                     <hr color="#7B5DE3">
                     <a href="#"><img src="assets/button-crear-gifo.svg" alt="Crear_Gifo"></a>
                 </ul>
@@ -34,12 +34,37 @@
         </nav>
     </header>
     <main>
+        <!--Inicio PopUp -->
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <img onclick="cerrarPopUp()" class="close-btn" src="assets/close.svg" alt="close">
+                <img id="gif-max" src="http://placehold.it/500x500?text=img" alt="placeholder">
+                <div id="container-section-popup">
+                    <section>
+                        <div>
+                            <h3 id="user-max">User</h3>
+                            <h2 id="title-max">Titulo GIFO</h2>
+                        </div>
+                        <div id="icons-gif-max">
+                            <img id="gif-max-fav" src="assets/icon-fav-active.svg" alt="">
+                            <img id="gif-max-download" src="assets/icon-download.svg" alt="">
+                        </div>
+                    </section>
+                </div>
+
+
+            </div>
+        </div>
+        <!--Fin PopUp -->
         <section id="Favoritos">
             <img src="assets/icon-favoritos.svg" alt="Favoritos">
             <h3>Favoritos</h3>
-            <div id="contenedorFavoritos">
-                
-            </div>
+            <section id="Busqueda">
+                <section id="capa">
+
+                </section>
+            </section>
             <a href="#" class="ver_mas"><img src="assets/CTA-ver-mas.svg" alt="Ver mas" class="ver-mas"></a>
         </section>
         <section id="inchange">
@@ -81,7 +106,9 @@
         <p>© GIFOS 2020 All Rights Reserved.</p>
     </footer>
     <hr color="#572EE5">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/favoritos.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -65,6 +65,7 @@ function generarGIFO() {
 
             for (let i = 0; i < imagenes.length; i++) {
                 let gifi = data.data[i].images.original.url;
+                console.log(gifi);
                 username[i].innerHTML = data.data[i].username;
                 if (username[i].innerHTML == "") {
                     username[i].innerHTML = "Sin autor";
@@ -85,14 +86,55 @@ function generarGIFO() {
         });
 }
 
-url = 0;
-function GuardarGIFO(id) {
-    let imagenFav = document.createElement('img');
-    let gifi = $('#' + id).attr('src');
-    imagenFav.setAttribute('src', gifi);
-    contenedorFavoritos.appendChild(imagenFav);
-    localStorage.setItem('URL' + url, gifi);
-    url = url + 1;
+let urlFav = [];
+let userFav = [];
+let titleFav = [];
+function GuardarGIFO(id, userId, titleId){
+    let añadir = new Boolean (false);
+    let gifi = $('#'+id).attr('src');
+    let user = document.getElementById(userId);
+    let title = document.getElementById(titleId);
+    let dataUrl = JSON.parse(localStorage.getItem("urlFav"));
+    let dataUser = JSON.parse(localStorage.getItem("userFav"));
+    let dataTitle = JSON.parse(localStorage.getItem("titleFav"));
+    if(dataUrl==null){
+        localStorage.setItem('urlFav', JSON.stringify(urlFav));
+        localStorage.setItem('userFav', JSON.stringify(userFav));
+        localStorage.setItem('titleFav', JSON.stringify(titleFav));
+        dataUrl = JSON.parse(localStorage.getItem("urlFav"));
+        dataUser = JSON.parse(localStorage.getItem("userFav"));
+        dataTitle = JSON.parse(localStorage.getItem("titleFav"));
+        dataUrl.push(gifi);
+        dataUser.push(user.innerHTML);
+        dataTitle.push(title.innerHTML);
+    } else if(dataUrl.length==0){
+        dataUrl.push(gifi);
+        dataUser.push(user.innerHTML);
+        dataTitle.push(title.innerHTML);
+        alert("Añadido correctamente");
+    }
+    else{
+        dataUrl = JSON.parse(localStorage.getItem("urlFav"));
+        for(let j = 0; j<dataUrl.length;j++){
+            if(gifi!=dataUrl[j]){
+                añadir = true;
+            }else{
+                añadir = false;
+                alert("Ya esta en favoritos");
+                break;
+            }
+        }
+        if(añadir==true){
+            dataUrl.push(gifi);
+            dataUser.push(user.innerHTML);
+            dataTitle.push(title.innerHTML);
+            alert("Añadido correctamente");
+        }
+        
+    }
+    localStorage.setItem('urlFav', JSON.stringify(dataUrl));
+    localStorage.setItem('userFav', JSON.stringify(dataUser));
+    localStorage.setItem('titleFav', JSON.stringify(dataTitle));
 }
 
 async function descargarGIFO(id) {
