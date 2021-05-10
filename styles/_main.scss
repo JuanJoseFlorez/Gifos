@@ -55,6 +55,16 @@ main {
                     width: 100%;
                 }
             }
+            .search_main{
+                display: none;
+                left: 12px;
+                top: 7px;
+                width: 4%;
+                position: absolute;
+                img {
+                    width: 100%;
+                }
+            }
         }
         /*input{
             border: 1px solid var(--purple-movile);
@@ -109,13 +119,7 @@ main {
             margin: -6px 10px 10px 10px;
             z-index: -1;
         }
-        .sugerencia_input{
-            display: none;
-            position: absolute;
-            width: 3.5%;
-            top: 0px;
-            left: 10px;
-        }
+        
         .sugerencias{
             cursor: pointer;
             color: #9CAFC3;
@@ -280,6 +284,17 @@ main {
                 z-index: 2;
             }
         }
+        .search_main{
+            display: none;
+            img {
+                padding: unset;
+                margin-left: 80%;
+                margin-top: -20%;
+                display: flex;
+                width: 20px;
+                z-index: 2;
+            }
+        }
 
         h4 {
             margin-top: 5%;
@@ -433,8 +448,30 @@ main {
                 }
             }
         }
+        #capaVerMas{
+            display: none;
+        }
     }
     /** FINISH ESTILOS FAVORITOS**/
+    #Sin-elementos{
+        display: none;
+        flex-flow: column wrap;
+        width: 100%;
+        #img-sin-elementos{
+            width: 30%;
+            margin-bottom: 3%;
+            margin-top: 10%;
+            align-self: center;
+        }
+        h5 {
+            color: $green-gifos;
+            font-size: 1.14em;
+            line-height: 33px;
+            text-align: center;
+            align-self: center;
+            margin-bottom: 18%;
+        }
+    }
     /** ESTILOS COMUNES **/
     #inchange {
         display: flex;
@@ -560,6 +597,11 @@ main {
                     top: 10px;
                     width: 3%;
                 }
+                .search_main{
+                    left: 15px;
+                    top: 10px;
+                    width: 3%;
+                }
             }
             h4 {
                 padding: 6% 0px 0px 0px;
@@ -621,6 +663,12 @@ main {
             .search {
                 img {
                     margin-left: 66%;
+                    margin-top: -5%;
+                }
+            }
+            .search_main{
+                img {
+                    margin-right: 66%;
                     margin-top: -5%;
                 }
             }
@@ -708,6 +756,14 @@ main {
             }
             h3 {
                 padding: 0px 0px 40px 0px;
+            }
+        }
+        #Sin-elementos {
+            #img-sin-elementos{
+                width: 20%;
+                margin-bottom: 3%;
+                margin-top: 5%;
+                align-self: center;
             }
         }
         #Crear_Gifo {
@@ -878,6 +934,11 @@ main {
                     right: 30px;
                     top: 15px;
                     width: 2%;
+                }
+                .search_main{
+                    left: 15px;
+                    top: 12px;
+                    width: 3%;
                 }
             }
         }

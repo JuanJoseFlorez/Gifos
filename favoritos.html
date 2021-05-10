@@ -14,21 +14,21 @@
 </head>
 
 <body>
-    <hr color="#572EE5">
+    <hr color="#572EE5" class="hrs">
     <header>
-        <img src="assets/logo-mobile.svg">
+        <a href="./index.html"><img src="assets/logo-mobile.svg" alt="logoGIFOS" id="logoGIFOS"></a>
         <nav>
             <div class="menu">
                 <input type="checkbox" id="checkbox" />
-                <img src="assets/burger.svg" alt="burger">
+                <img src="assets/burger.svg" alt="burger" id="burgerMovil">
                 <ul>
-                    <li><a href="#">Modo Nocturno</a></li>
-                    <hr color="#7B5DE3">
+                    <li><a href="#" id="Nocturno">Modo Nocturno</a></li>
+                    <hr color="#7B5DE3" class="hrsBurguer">
                     <li><a href="#">Favoritos</a></li>
-                    <hr color="#7B5DE3">
-                    <li><a href="mis-gifos.html">Mis GIFOS</a></li>
-                    <hr color="#7B5DE3">
-                    <a href="#"><img src="assets/button-crear-gifo.svg" alt="Crear_Gifo"></a>
+                    <hr color="#7B5DE3" class="hrsBurguer">
+                    <li><a href="./mis-gifos.html">Mis GIFOS</a></li>
+                    <hr color="#7B5DE3" class="hrsBurguer">
+                    <a href="crear_gifo_1.html"><img src="assets/button-crear-gifo.svg" alt="Crear_Gifo" id="crearGIFO"></a>
                 </ul>
             </div>
         </nav>
@@ -64,8 +64,15 @@
                 <section id="capa">
 
                 </section>
+                <section id="capaVerMas">
+
+                </section>
             </section>
-            <a href="#" class="ver_mas"><img src="assets/CTA-ver-mas.svg" alt="Ver mas" class="ver-mas"></a>
+            <a href="#capaVerMas" class="ver_mas"><img src="assets/CTA-ver-mas.svg" alt="Ver mas" class="ver-mas"></a>
+        </section>
+        <section id="Sin-elementos">
+            <img id="img-sin-elementos" src="assets/icon-fav-sin-contenido.svg" alt="">
+            <h5>¡Guarda tu primer GIFO en Favoritos para que se muestre aquí!</h5>
         </section>
         <section id="inchange">
             <h3>Trending GIFOS</h3>
@@ -105,9 +112,10 @@
         </div>
         <p>© GIFOS 2020 All Rights Reserved.</p>
     </footer>
-    <hr color="#572EE5">
+    <hr color="#572EE5" class="hrs">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/favoritos.js"></script>
+    <script src="js/nocturno.js"></script>
     <script src="js/script.js"></script>
 </body>
 
