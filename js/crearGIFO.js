@@ -130,6 +130,4 @@ let conseguirIMG = (id) =>{
         localStorage.setItem('urlGifSubidos', JSON.stringify(dataUrlGifSubidos));
     }).catch(message_error => console.log('F' + message_error))
     }
-
-
-
+    
