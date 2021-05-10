@@ -23,11 +23,11 @@
                 <ul>
                     <li><a href="#" id="Nocturno">Modo Nocturno</a></li>
                     <hr color="#7B5DE3" class="hrsBurguer">
-                    <li><a href="favoritos.html">Favoritos</a></li>
+                    <li><a href="./favoritos.html">Favoritos</a></li>
                     <hr color="#7B5DE3" class="hrsBurguer">
-                    <li><a href="#">Mis GIFOS</a></li>
+                    <li><a href="./mis-gifos.html">Mis GIFOS</a></li>
                     <hr color="#7B5DE3" class="hrsBurguer">
-                    <a href="crear_gifo_1.html"><img src="assets/button-crear-gifo.svg" alt="Crear_Gifo" id="crearGIFO"></a>
+                    <a href="./crear_gifo_1.html"><img src="assets/button-crear-gifo.svg" alt="Crear_Gifo" id="crearGIFO"></a>
                 </ul>
             </div>
         </nav>
@@ -60,8 +60,35 @@
             <h2>Inspírate, busca, guarda, y crea los mejores <span class="color-home"> GIFOS</span></h2>
             <img src="assets/ilustra_header.svg" alt="img_home">
             <div class="container-busqueda">
-                <input type="text" placeholder="Busca GIFOS y más" class="input_gifo">
-                <a href="#" class="search"><img src="assets/icon-search.svg" alt="buscar"></a>
+                <input type="search" placeholder="Busca GIFOS y más" class="input_gifo" onclick="getSugerencias()">
+                <a href="#Busqueda" class="search"><img src="assets/icon-search.svg" alt="buscar"></a>
+                <a href="#Busqueda" class="search_main"><img src="assets/icon-search-busqueda.svg" alt="buscar"></a>
+                <div id="content-search">
+                    <div class="content_childs">
+                        <img src="assets/icon-search-busqueda.svg" alt="buscar" class="search_sugerencias">
+                        <p class="sugerencias">
+                            sugerencias
+                        </p>
+                    </div>
+                    <div class="content_childs">
+                        <img src="assets/icon-search-busqueda.svg" alt="buscar" class="search_sugerencias">
+                        <p class="sugerencias">
+                            sugerencias
+                        </p>
+                    </div>
+                    <div class="content_childs">
+                        <img src="assets/icon-search-busqueda.svg" alt="buscar" class="search_sugerencias">
+                        <p class="sugerencias">
+                            sugerencias
+                        </p>
+                    </div>
+                    <div class="content_childs">
+                        <img src="assets/icon-search-busqueda.svg" alt="buscar" class="search_sugerencias">
+                        <p class="sugerencias">
+                            sugerencias
+                        </p>
+                    </div>
+                </div>
             </div>
             <h4>Trending:</h4>
             <p>Reactions, Entertainment, Sports, Stickers, Artists</p>
@@ -73,7 +100,7 @@
             <section>
 
                 <div class="contenedor">
-                    <img id="imagen1" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
+                    <img id="imagen1" alt="Test" src="assets/loading.gif"
                         class="resultado_gifos">
                     <div class="botonesImg">
                         <img src="assets/icon-fav.svg" alt="" class="favoritosButton" onclick="GuardarGIFO('imagen1','user1','title1')">
@@ -252,7 +279,189 @@
                 </div>
 
             </section>
-            <a href="#" class="ver_mas"><img src="assets/CTA-ver-mas.svg" alt="Ver mas" class="ver-mas"></a>
+            <a href="#section_ver_mas" class="ver_mas"><img src="assets/CTA-ver-mas.svg" alt="Ver mas" class="ver-mas"></a>
+            <section id="section_ver_mas">
+
+                <div class="contenedor">
+                    <img id="imagen13" alt="Test" src="assets/loading.gif"
+                        class="resultado_gifos">
+                    <div class="botonesImg">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen13','user13','title13')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton" onclick="descargarGIFO('imagen13')">
+                        <img onclick="togglePopUp('imagen13','user13','title13')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                    </div>
+                    <div class="user-title-hover">
+                        <p class="user_GIFO" id="user13" data-content=" ">User</p>
+                        <p class="title_GIFO" id="title13">Titulo</p>
+                    </div>
+                </div>
+
+
+                <div class="contenedor">
+                    <img id="imagen14" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
+                        class="resultado_gifos">
+                    <div class="botonesImg">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen14','user14','title14')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton" onclick="descargarGIFO('imagen14')">
+                        <img onclick="togglePopUp('imagen14','user14','title14')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                    </div>
+                    <div class="user-title-hover">
+                        <p class="user_GIFO" id="user14" data-content=" ">User</p>
+                        <p class="title_GIFO" id="title14" data-content=" ">Titulo</p>
+                    </div>
+                </div>
+
+
+                <div class="contenedor">
+                    <img id="imagen15" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
+                        class="resultado_gifos">
+                    <div class="botonesImg">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen15','user15','title15')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton" onclick="descargarGIFO('imagen15')">
+                        <img onclick="togglePopUp('imagen15','user15','title15')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                    </div>
+                    <div class="user-title-hover">
+                        <p class="user_GIFO" id="user15" data-content=" ">User</p>
+                        <p class="title_GIFO" id="title15" data-content=" ">Titulo</p>
+                    </div>
+                </div>
+
+
+                <div class="contenedor">
+                    <img id="imagen16" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
+                        class="resultado_gifos"> 
+                    <div class="botonesImg">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen16','user16','title16')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton" onclick="descargarGIFO('imagen16')">
+                        <img onclick="togglePopUp('imagen16','user16','title16')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                    </div>
+                    <div class="user-title-hover">
+                        <p class="user_GIFO" id="user16" data-content=" ">User</p>
+                        <p class="title_GIFO" id="title16" data-content=" ">Titulo</p>
+                    </div>
+                </div>
+
+
+                <div class="contenedor">
+                    <img id="imagen17" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
+                        class="resultado_gifos">
+                    <div class="botonesImg">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen17','user17','title17')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton" onclick="descargarGIFO('imagen17')">
+                        <img onclick="togglePopUp('imagen17','user17','title17')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                    </div>
+                    <div class="user-title-hover">
+                        <p class="user_GIFO" id="user17" data-content=" ">User</p>
+                        <p class="title_GIFO" id="title17" data-content=" ">Titulo</p>
+                    </div>
+                </div>
+
+
+                <div class="contenedor">
+                    <img id="imagen18" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
+                        class="resultado_gifos">
+                    <div class="botonesImg">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen18','user18','title18')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton" onclick="descargarGIFO('imagen18')">
+                        <img onclick="togglePopUp('imagen18','user18','title18')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                    </div>
+                    <div class="user-title-hover">
+                        <p class="user_GIFO" id="user18" data-content=" ">User</p>
+                        <p class="title_GIFO" id="title18" data-content=" ">Titulo</p>
+                    </div>
+                </div>
+
+
+                <div class="contenedor">
+                    <img id="imagen19" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
+                        class="resultado_gifos">
+                    <div class="botonesImg">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen19','user19','title19')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton" onclick="descargarGIFO('imagen19')">
+                        <img onclick="togglePopUp('imagen19','user19','title19')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                    </div>
+                    <div class="user-title-hover">
+                        <p class="user_GIFO" id="user19" data-content=" ">User</p>
+                        <p class="title_GIFO" id="title19" data-content=" ">Titulo</p>
+                    </div>
+                </div>
+
+
+                <div class="contenedor">
+                    <img id="imagen20" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
+                        class="resultado_gifos">
+                    <div class="botonesImg">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen20','user20','title20')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton" onclick="descargarGIFO('imagen20')">
+                        <img onclick="togglePopUp('imagen20','user20','title20')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                    </div>
+                    <div class="user-title-hover">
+                        <p class="user_GIFO" id="user20" data-content=" ">User</p>
+                        <p class="title_GIFO" id="title20" data-content=" ">Titulo</p>
+                    </div>
+                </div>
+
+
+                <div class="contenedor">
+                    <img id="imagen21" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
+                        class="resultado_gifos">
+                    <div class="botonesImg">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen21','user21','title21')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton" onclick="descargarGIFO('imagen21')">
+                        <img onclick="togglePopUp('imagen21','user21','title21')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                    </div>
+                    <div class="user-title-hover">
+                        <p class="user_GIFO" id="user21" data-content=" ">User</p>
+                        <p class="title_GIFO" id="title21" data-content=" ">Titulo</p>
+                    </div>
+                </div>
+
+
+                <div class="contenedor">
+                    <img id="imagen22" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
+                        class="resultado_gifos">
+                    <div class="botonesImg">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen22')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton" onclick="descargarGIFO('imagen22')">
+                        <img onclick="togglePopUp('imagen22')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                    </div>
+                    <div class="user-title-hover">
+                        <p class="user_GIFO" id="user22" data-content=" ">User</p>
+                        <p class="title_GIFO" id="title22" data-content=" ">Titulo</p>
+                    </div>
+                </div>
+
+
+                <div class="contenedor">
+                    <img id="imagen23" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
+                        class="resultado_gifos">
+                    <div class="botonesImg">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen23','user23','title23')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton" onclick="descargarGIFO('imagen23')">
+                        <img onclick="togglePopUp('imagen23','user23','title23')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                    </div>
+                    <div class="user-title-hover">
+                        <p class="user_GIFO" id="user23" data-content=" ">User</p>
+                        <p class="title_GIFO" id="title23" data-content=" ">Titulo</p>
+                    </div>
+                </div>
+
+
+                <div class="contenedor">
+                    <img id="imagen24" alt="Test" src="https://media.giphy.com/media/hWZBZjMMuMl7sWe0x8/giphy.gif"
+                        class="resultado_gifos">
+                    <div class="botonesImg">
+                        <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton" onclick="GuardarGIFO('imagen24','user24','title24')">
+                        <img src="assets/icon-download.svg" alt="descarga" class="descargaButton" onclick="descargarGIFO('imagen24')">
+                        <img onclick="togglePopUp('imagen24','user24','title24')" src="assets/icon-max-normal.svg" alt="ImgMax">
+                    </div>
+                    <div class="user-title-hover">
+                        <p class="user_GIFO" id="user24" data-content=" ">User</p>
+                        <p class="title_GIFO" id="title24" data-content=" ">Titulo</p>
+                    </div>
+                </div>
+
+            </section>
 
         </section>
         <section id="Busqueda-sin-resultados">
