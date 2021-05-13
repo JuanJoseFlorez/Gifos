@@ -258,7 +258,7 @@ main {
       z-index: -1; }
     main #Home .sugerencias {
       cursor: pointer;
-      color: #9CAFC3; }
+      color: #9cafc3; }
   main #Busqueda-sin-resultados {
     display: none;
     flex-flow: column wrap;
@@ -315,14 +315,13 @@ main {
     main #Busqueda section {
       padding-left: 6%;
       display: flex;
-      flex-flow: wrap; }
+      flex-flow: wrap;
+      width: 100%; }
       main #Busqueda section .contenedor {
         width: 40%;
+        margin-right: 5px;
         height: auto;
-        margin: 1%;
-        position: relative;
-        display: flex;
-        justify-content: flex-end; }
+        position: relative; }
         main #Busqueda section .contenedor:hover img {
           filter: contrast(100%) sepia(1) hue-rotate(220deg) saturate(1000%); }
         main #Busqueda section .contenedor:hover .botonesImg {
@@ -330,35 +329,34 @@ main {
         main #Busqueda section .contenedor:hover .user-title-hover {
           opacity: 1; }
         main #Busqueda section .contenedor img {
-          min-width: 100%;
-          display: block; }
+          width: 100%;
+          height: 150px; }
         main #Busqueda section .contenedor .botonesImg {
-          transition: 0.5s ease;
           position: absolute;
-          display: flex;
           top: 10%;
-          opacity: 0;
-          right: 1px; }
+          right: 0px;
+          display: flex;
+          opacity: 0; }
           main #Busqueda section .contenedor .botonesImg img {
-            min-width: 20px;
+            width: 30px;
             height: auto;
-            margin: unset;
             padding: 3%;
             cursor: pointer; }
         main #Busqueda section .contenedor .user-title-hover {
           opacity: 0;
           position: absolute;
           top: 60%;
-          left: 0;
-          width: 50%; }
+          left: 5px;
+          width: 90%; }
           main #Busqueda section .contenedor .user-title-hover p {
             width: 100%;
             display: block;
             color: #fff;
-            text-align: justify;
+            text-align: start;
+            font-size: 0.5em;
+            padding: 0px;
             margin: 0px;
-            padding-left: 10px;
-            font-size: 0.5em; }
+            line-height: 1.5; }
     main #Busqueda .ver_mas {
       display: flex;
       align-self: center; }
@@ -454,10 +452,9 @@ main {
           min-width: 100%;
           display: block; }
         main #Favoritos section .contenedor .botonesImg {
-          transition: 0.5s ease;
           position: absolute;
           display: flex;
-          top: 10%;
+          top: 5%;
           opacity: 0;
           right: 1px; }
           main #Favoritos section .contenedor .botonesImg img {
@@ -470,15 +467,14 @@ main {
           opacity: 0;
           position: absolute;
           top: 60%;
-          left: 0;
-          width: 50%; }
+          left: 5px;
+          width: 90%; }
           main #Favoritos section .contenedor .user-title-hover p {
             width: 100%;
             display: block;
             color: #fff;
-            text-align: justify;
+            text-align: start;
             margin: 0px;
-            padding-left: 10px;
             font-size: 0.5em; }
     main #Favoritos img {
       padding-top: 10px; }
@@ -540,7 +536,7 @@ main {
     width: 100%;
     height: auto;
     padding-bottom: 100px;
-    background-color: #F3F5F8; }
+    background-color: #f3f5f8; }
     main #inchange h3 {
       padding-top: 20%;
       display: flex;
@@ -580,10 +576,41 @@ main {
         display: flex;
         position: relative; }
         main #inchange #carrusel .carrusel > div {
-          margin-right: 5px; }
+          margin-right: 5px;
+          position: relative; }
+          main #inchange #carrusel .carrusel > div:hover img {
+            filter: contrast(100%) sepia(1) hue-rotate(220deg) saturate(1000%); }
+          main #inchange #carrusel .carrusel > div:hover .user-title-hover {
+            opacity: 1; }
+          main #inchange #carrusel .carrusel > div:hover .botonesImg {
+            opacity: 1; }
           main #inchange #carrusel .carrusel > div img {
             width: 200px;
             height: 175px; }
+          main #inchange #carrusel .carrusel > div .user-title-hover {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            margin-top: 50%;
+            margin-left: 5px;
+            width: 90%;
+            justify-content: start;
+            text-align: start;
+            opacity: 0; }
+            main #inchange #carrusel .carrusel > div .user-title-hover p {
+              color: white;
+              margin-bottom: 0;
+              text-align: start;
+              font-size: 1em; }
+          main #inchange #carrusel .carrusel > div .botonesImg {
+            position: absolute;
+            top: 0px;
+            right: 5px;
+            margin-top: -70px;
+            opacity: 0; }
+            main #inchange #carrusel .carrusel > div .botonesImg img {
+              width: 30px;
+              cursor: pointer; }
   main .popup .overlay {
     position: fixed;
     top: 0px;
@@ -609,8 +636,10 @@ main {
       margin-left: 2%;
       font-size: 1em; }
     main .popup .content h2 {
-      text-align: justify;
-      font-size: 1.2em; }
+      text-align: start;
+      font-size: 1em; }
+    main .popup .content .user-title-popup {
+      width: 80%; }
   main .popup .close-btn {
     position: absolute;
     right: 5%;
@@ -690,7 +719,7 @@ main {
     main #Busqueda .color-home {
       color: #50E3C2; }
     main #Busqueda .ver_mas {
-      margin: 15% 0px 5% 0px;
+      margin: 50px 0px 5% 0px;
       padding: unset; }
       main #Busqueda .ver_mas img {
         margin: unset;
@@ -749,7 +778,7 @@ main {
           width: 100%;
           display: block;
           color: #fff;
-          text-align: justify;
+          text-align: start;
           margin: 0px;
           padding-left: 10px;
           font-size: 0.8em;
@@ -778,89 +807,142 @@ main {
     align-self: center; }
   main #Crear_Gifo {
     width: 100%;
-    height: 479px;
-    display: flex; }
-    main #Crear_Gifo .Contenedor {
+    height: auto;
+    text-align: center; }
+    main #Crear_Gifo .row {
       display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      width: 47.8%;
-      height: 70%;
-      border: 1px solid var(--purple-gifos);
-      padding: 7.5% 10% 4% 10%; }
-      main #Crear_Gifo .Contenedor .tamaño {
-        width: 27px;
-        height: 25px; }
-      main #Crear_Gifo .Contenedor .linea1 {
+      flex-direction: row;
+      justify-content: center; }
+      main #Crear_Gifo .row .Contenedor {
+        width: auto;
+        height: auto;
+        border: 1px solid var(--purple-gifos);
+        padding: 5% 15%;
         display: flex;
-        border-left: 3px solid #50E3C2;
-        border-top: 3px solid #50E3C2; }
-      main #Crear_Gifo .Contenedor .linea2 {
-        display: flex;
-        margin-left: 90%;
-        border-top: 3px solid #50E3C2;
-        border-right: 3px solid #50E3C2; }
-      main #Crear_Gifo .Contenedor .linea3 {
-        display: flex;
-        margin-top: 30%;
-        border-left: 3px solid #50E3C2;
-        border-bottom: 3px solid #50E3C2; }
-      main #Crear_Gifo .Contenedor .linea4 {
-        display: flex;
-        margin-left: 90%;
-        margin-top: 30%;
-        border-right: 3px solid #50E3C2;
-        border-bottom: 3px solid #50E3C2; }
-      main #Crear_Gifo .Contenedor h2 {
-        text-align: center;
-        color: var(--purple-gifos); }
-      main #Crear_Gifo .Contenedor .color {
-        color: #50E3C2; }
-      main #Crear_Gifo .Contenedor p {
-        text-align: center; }
-    main #Crear_Gifo .luz {
-      width: 65px; }
-    main #Crear_Gifo .camara {
-      margin-top: -10%; }
+        flex-direction: column;
+        justify-content: center; }
+        main #Crear_Gifo .row .Contenedor .tamaño {
+          width: 27px;
+          height: 25px; }
+        main #Crear_Gifo .row .Contenedor .linea1 {
+          display: flex;
+          border-left: 3px solid #50E3C2;
+          border-top: 3px solid #50E3C2; }
+        main #Crear_Gifo .row .Contenedor .linea2 {
+          display: flex;
+          margin-left: 90%;
+          border-top: 3px solid #50E3C2;
+          border-right: 3px solid #50E3C2; }
+        main #Crear_Gifo .row .Contenedor .linea3 {
+          display: flex;
+          margin-top: 30%;
+          border-left: 3px solid #50E3C2;
+          border-bottom: 3px solid #50E3C2; }
+        main #Crear_Gifo .row .Contenedor .linea4 {
+          display: flex;
+          margin-left: 90%;
+          margin-top: 30%;
+          border-right: 3px solid #50E3C2;
+          border-bottom: 3px solid #50E3C2; }
+        main #Crear_Gifo .row .Contenedor h2 {
+          text-align: center;
+          color: var(--purple-gifos); }
+        main #Crear_Gifo .row .Contenedor .color {
+          color: #50E3C2; }
+        main #Crear_Gifo .row .Contenedor p {
+          text-align: center; }
+        main #Crear_Gifo .row .Contenedor #video-camara {
+          position: relative;
+          display: none;
+          width: 100%; }
+          main #Crear_Gifo .row .Contenedor #video-camara > video {
+            width: 100%;
+            height: 100%; }
+          main #Crear_Gifo .row .Contenedor #video-camara > p {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            color: white;
+            font-size: 1em;
+            display: none; }
+          main #Crear_Gifo .row .Contenedor #video-camara > img {
+            position: absolute;
+            top: 40%;
+            margin-top: -10px;
+            left: 50%;
+            margin-left: -15px;
+            width: 30px;
+            display: none; }
+          main #Crear_Gifo .row .Contenedor #video-camara #botones_camara {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            display: none; }
+            main #Crear_Gifo .row .Contenedor #video-camara #botones_camara > img {
+              padding: 5%;
+              width: 30px;
+              cursor: pointer; }
+            main #Crear_Gifo .row .Contenedor #video-camara #botones_camara #urlGIFO {
+              display: none; }
+      main #Crear_Gifo .row .luz {
+        width: 65px;
+        padding: 0;
+        margin-left: 0; }
+      main #Crear_Gifo .row .camara {
+        margin: 0;
+        padding: 0; }
+      main #Crear_Gifo .row .pelicula {
+        margin-left: 4%;
+        margin-top: 17%; }
     main #Crear_Gifo .mov {
       margin-left: 15%; }
-    main #Crear_Gifo .pelicula {
-      margin-left: 4%;
-      margin-top: 17%; }
+    main #Crear_Gifo .mensaje-pequeño {
+      width: 200px;
+      height: auto;
+      font-size: 1em;
+      color: #572EE5;
+      position: relative;
+      top: -30px;
+      left: 65%;
+      display: none; }
+    main #Crear_Gifo #repetir {
+      cursor: pointer; }
     main #Crear_Gifo .pasos {
       width: 32px;
-      margin-top: 17%;
-      margin-left: -6%; }
-    main #Crear_Gifo .movp {
-      margin-left: -31%; }
+      justify-content: center;
+      margin-top: 1%; }
     main #Crear_Gifo img {
       width: 110px; }
     main #Crear_Gifo .create {
       margin-top: 440px;
-      margin-left: -440px; }
+      margin-left: -440px;
+      margin-top: 1%; }
       main #Crear_Gifo .create:hover {
         content: url("../assets/CTA-comenzar-hover.svg"); }
     main #Crear_Gifo .grabar {
-      margin-top: 440px;
-      margin-left: -440px; }
+      margin: auto;
+      margin-top: 1%; }
       main #Crear_Gifo .grabar:hover {
         content: url("../assets/CTA-grabar-hover.svg"); }
     main #Crear_Gifo .finalizar {
-      margin-top: 440px;
-      margin-left: -440px; }
+      margin: auto;
+      margin-top: 1%; }
       main #Crear_Gifo .finalizar:hover {
         content: url("../assets/CTA-finalizar-hover.svg"); }
     main #Crear_Gifo .subir-gifo {
-      margin-top: 440px;
-      margin-left: -440px; }
+      margin: auto;
+      margin-top: 1%; }
       main #Crear_Gifo .subir-gifo:hover {
         content: url("../assets/CTA-subir-gifo-hover.svg"); }
+    main #Crear_Gifo .comenzar {
+      margin-top: 1%; }
     main #Crear_Gifo .hr_gifos {
-      width: 53%;
+      width: 60%;
       height: 7px;
       border-radius: 10px;
-      margin-top: 26%;
-      margin-left: -25%; }
+      margin: auto;
+      margin-top: 1%; }
   main #inchange h3 {
     padding-top: unset;
     margin-top: 5%; }
@@ -870,7 +952,7 @@ main {
   main #inchange br {
     display: none; }
   main #inchange #carrusel {
-    width: 600px; }
+    width: 610px; }
     main #inchange #carrusel .right-arrow {
       right: 0px; }
       main #inchange #carrusel .right-arrow img {
@@ -882,6 +964,10 @@ main {
       width: 40px; }
     main #inchange #carrusel .left-arrow:hover {
       width: 40px; }
+    main #inchange #carrusel .carrusel > div .user-title-hover {
+      margin-top: 55%; }
+    main #inchange #carrusel .carrusel > div .botonesImg {
+      right: 3px; }
 
   .popup .close-btn {
     right: 35%;
@@ -893,6 +979,8 @@ main {
     width: 100%; }
   .popup .content #gif-max {
     height: 350px;
+    width: 80%; }
+  .popup .content .user-title-popup {
     width: 80%; }
 
   #gif-max {
@@ -917,7 +1005,8 @@ main {
     margin-left: -3%; }
   main #Busqueda section .contenedor {
     position: relative;
-    width: 20%; }
+    width: 20%;
+    margin: 1%; }
     main #Busqueda section .contenedor img {
       height: 250px; }
     main #Busqueda section .contenedor .botonesImg {
@@ -945,8 +1034,7 @@ main {
     main #Favoritos section .contenedor {
       padding-left: unset;
       position: relative; }
-      main #Favoritos section .contenedor wi
-      img {
+      main #Favoritos section .contenedor wi img {
         height: 250px; }
       main #Favoritos section .contenedor .botonesImg {
         top: 5%;
@@ -972,7 +1060,7 @@ main {
           width: 100%;
           display: block;
           color: #fff;
-          text-align: justify;
+          text-align: start;
           margin: 0px;
           padding-left: 10px;
           font-size: 1em;
@@ -980,7 +1068,7 @@ main {
   main #inchange #carrusel {
     position: relative;
     overflow: hidden;
-    width: 900px; }
+    width: 910px; }
     main #inchange #carrusel .left-arrow {
       position: absolute;
       left: 0px;
@@ -1001,6 +1089,16 @@ main {
         main #inchange #carrusel .carrusel > div img {
           width: 300px;
           height: 275px; }
+        main #inchange #carrusel .carrusel > div .user-title-hover {
+          margin-top: 60%; }
+        main #inchange #carrusel .carrusel > div .botonesImg {
+          position: absolute;
+          top: 0px;
+          right: 5px;
+          margin-top: -115px; }
+          main #inchange #carrusel .carrusel > div .botonesImg img {
+            width: 35px;
+            cursor: pointer; }
   main .popup .close-btn {
     right: 35%;
     top: -40px; }
