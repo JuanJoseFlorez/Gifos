@@ -7,8 +7,6 @@ window.onload = listarMisGifos();
 
 function listarMisGifos() {
     
-   
-    console.log(dataUrl);
     /** 
     for (let i = 0; i < dataUrl.length; i++) {
         escribir(dataUrl[i], i);

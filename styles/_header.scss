@@ -44,6 +44,7 @@ header{
                 opacity:.90;
                 height: 0px;
                 transition: height 0.5s ease;
+                z-index: 10;
                 img{
                     display: none;
                 }
@@ -63,7 +64,7 @@ header{
                     align-items: center;
                     width: 100%;
                     &:hover{
-                        background:blue;
+                        background:#50E3C2;
                     }
                     a{
                         position: relative;

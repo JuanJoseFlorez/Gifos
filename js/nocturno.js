@@ -9,6 +9,7 @@ let hrsBurguer = document.getElementsByClassName('hrsBurguer');
 nocturno.addEventListener('click', () => {
     if(nocturno.innerHTML == "Modo Nocturno"){
         document.documentElement.style.setProperty('--default-background', '#37383C');
+        document.documentElement.style.setProperty('--default-inchange', '#222326');
         document.documentElement.style.setProperty('--purple-gifos', 'white');
         document.documentElement.style.setProperty('--purple-movile', 'black');
         document.documentElement.style.setProperty('--color-p', 'white');
@@ -37,6 +38,7 @@ nocturno.addEventListener('click', () => {
         nocturno.innerHTML = "Modo Diurno";
     }else{
         document.documentElement.style.setProperty('--default-background', 'white');
+        document.documentElement.style.setProperty('--default-inchange', '#F3F5F8');
         document.documentElement.style.setProperty('--purple-gifos', '#572EE5');
         document.documentElement.style.setProperty('--purple-movile', '#572EE5');
         document.documentElement.style.setProperty('--color-p', 'black');
