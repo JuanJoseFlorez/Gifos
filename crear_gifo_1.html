@@ -8,8 +8,6 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/glider.min.css" />
     <link rel="stylesheet" href="styles/carrusel.css">
-    <script src="js/glider.min.js"></script>
-    <script src="js/carrusel.js"></script>
     <title>CREAR GIFO</title>
 </head>
 
@@ -35,23 +33,36 @@
     </header>
     <main>
         <section id="Crear_Gifo">
-
+            <div class="row">
             <img src="assets/camara.svg" alt="camara" class="camara mov">
             <img src="assets/Path 2.svg" alt="Luz" class="luz camara">
             <div class="Contenedor" id="changeContenedor">
                 <h2 id="changeTitle">Aquí podrás<br> crear tus propios<span class="color"> GIFOS</span></h2>
                 <p id="changeP">¡Crea tu GIFO en sólo 3 pasos!<br>(sólo necesitas una cámara para grabar un video)</p>
-                <div class="video-wrap">
+                <div class="video-wrap" id="video-camara">
                     <video src="" id="video" playsinline autoplay></video>
+                    <div class="row" id="botones_camara">
+                        <img onclick="descargarMyGIFO('urlGIFO')" src="assets/icon-download.svg" alt="">
+                        <img onclick="copiarURL('urlGIFO')" id="buttonCopiar" src="assets/icon-link-normal.svg" alt="">
+                        <p id="urlGIFO"></p>
+                    </div>
+                    <img id="imagen-subiendo" src="assets/loader.svg" alt="">
+                    <p id="parrafo-subiendo">Estamos subiendo tu GIFO</p>
+                    <img id="imagen-subido" src="assets/check.svg" alt="">
+                    <p id="parrafo-subido">GIFO subido con éxito</p>
                 </div>
             </div>
+        
             <img src="assets/pelicula.svg" alt="pelicula" class="pelicula">
-            <img src="assets/paso-a-paso-3.svg" alt="Three" class="pasos movp">
-            <img src="assets/paso-a-paso-2.svg" alt="Two" class="pasos">
+        </div>
+            
             <img src="assets/paso-a-paso.svg" alt="One" class="pasos">
+            <img src="assets/paso-a-paso-2.svg" alt="Two" class="pasos">
+            <img src="assets/paso-a-paso-3.svg" alt="Three" class="pasos movp">
+            <div class="mensaje-pequeño" id="number"><span>00:</span><span id="minutos">00</span><span id="segundos">:00</span></div>
+            <div class="mensaje-pequeño" id="repetir">Repetir Captura</div>
             <hr color="#572EE5" class="hr_gifos">
             <a href="#"><img src="assets/CTA-comenzar.svg" alt="comenzar" class="comenzar" onclick="getStreamAndRecord()"></a>
-            <a href="#"><img src="assets/CTA-crear-gifo-active-modo-noc.svg" class="dar_acceso" style="display: none;"></a>
             <a href="#"><img src="assets/CTA-grabar.svg" class="grabar" style="display: none" onclick="iniciarGrabacion()"></a>
             <a href="#"><img src="assets/CTA-finalizar.svg" class="finalizar" style="display: none" onclick="detenerGrabacion()"></a>
             <a href="#"><img src="assets/CTA-subir-gifo.svg" class="subir-gifo" style="display: none;"></a>
