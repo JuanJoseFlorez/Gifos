@@ -33,7 +33,7 @@ let urlGifSubida = "https://upload.giphy.com/v1/gifs?api_key=ElUCJDgPAZ7oEbz7Hip
 let urlGifSubidos = [];
 
 button_comenzar.addEventListener('click', () => {
-    step_3.setAttribute('src', '../assets/paso-a-paso-hover.svg');
+    step_3.setAttribute('src', './assets/paso-a-paso-hover.svg');
     changeTitle.innerHTML = "¿Nos das acceso a tu cámara?";
     changeP.innerHTML = "El acceso a tu camara será válido sólo por el tiempo en el que estés creando el GIFO.";
     button_comenzar.style.display = "none";
@@ -51,9 +51,9 @@ button_finalizar.addEventListener('click', () => {
 
 button_subir.addEventListener('click', () => {
     button_subir.style.display = 'none';
-    step_1.setAttribute('src', '../assets/paso-a-paso-hover-3.svg');
-    step_2.setAttribute('src', '../assets/paso-a-paso-2.svg');
-    step_3.setAttribute('src', '../assets/paso-a-paso.svg');
+    step_1.setAttribute('src', './assets/paso-a-paso-hover-3.svg');
+    step_2.setAttribute('src', './assets/paso-a-paso-2.svg');
+    step_3.setAttribute('src', './assets/paso-a-paso.svg');
     boton_repetir.style.display = 'none';
     etiqueta_video.style.filter = 'contrast(100%) sepia(1) hue-rotate(220deg) saturate(1000%)';
     imagen_subiendo.style.display = 'block';
@@ -103,9 +103,9 @@ function getStreamAndRecord() {
         }
     })
         .then(function (stream) {
-            step_1.setAttribute('src', '../assets/paso-a-paso-3.svg');
-            step_2.setAttribute('src', '../assets/paso-a-paso-hover-2.svg');
-            step_3.setAttribute('src', '../assets/paso-a-paso.svg');
+            step_1.setAttribute('src', './assets/paso-a-paso-3.svg');
+            step_2.setAttribute('src', './assets/paso-a-paso-hover-2.svg');
+            step_3.setAttribute('src', './assets/paso-a-paso.svg');
             video_camara.style.display = "block"
             changeTitle.style.display = "none";
             changeP.style.display = "none";
