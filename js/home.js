@@ -1,4 +1,3 @@
-alert('funciona')
 
 let lupa = document.getElementsByClassName('search')[0];
 let search_input = document.getElementsByClassName('search_main')[0];
