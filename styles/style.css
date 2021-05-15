@@ -27,7 +27,7 @@ p {
 body hr {
   height: 5px;
   width: 100%;
-  color: black; }
+  background-color: #572EE5; }
 
 header {
   padding: 7% 7% 0% 7%;
@@ -68,7 +68,8 @@ header {
         display: flex;
         filter: alpha(opacity=90);
         -moz-opacity: .90;
-        opacity: .90; }
+        opacity: .90;
+        background-color: #7B5DE3; }
       header nav .menu ul li {
         position: relative;
         display: flex;
@@ -122,7 +123,7 @@ header {
         height: unset; }
         header nav .menu ul hr {
           display: none; }
-        header nav .menu ul a {
+        header nav .menu ul #boton-crear {
           display: none; }
         header nav .menu ul li {
           width: unset;
@@ -149,7 +150,7 @@ header {
       header nav .menu img {
         display: none; } }
 @media screen and (min-width: 1200px) {
-  header nav .menu ul a {
+  header nav .menu ul #boton-crear {
     display: block; } }
 :root {
   --purple-gifos: #572ee5;
@@ -295,7 +296,8 @@ main {
       width: 157px;
       text-align: center;
       display: flex;
-      opacity: 0.5; }
+      opacity: 0.5;
+      background-color: #9CAFC3; }
   main #Busqueda {
     display: none;
     flex-flow: column wrap;
@@ -419,7 +421,8 @@ main {
       width: 157px;
       text-align: center;
       display: flex;
-      opacity: 0.5; }
+      opacity: 0.5;
+      background-color: #9CAFC3; }
     main #Busqueda #casilla-busqueda {
       margin: unset;
       position: relative;
@@ -911,7 +914,7 @@ main {
     main #Favoritos section .contenedor {
       padding-left: unset;
       position: relative; }
-      main #Favoritos section .contenedor wi img {
+      main #Favoritos section .contenedor img {
         height: 250px; }
       main #Favoritos section .contenedor .botonesImg {
         top: 5%;
@@ -1126,7 +1129,8 @@ main {
       height: 7px;
       border-radius: 10px;
       margin: auto;
-      margin-top: 1%; } }
+      margin-top: 1%;
+      background-color: #572EE5; } }
 :root {
   --color-p: black; }
 
@@ -1161,5 +1165,3 @@ footer {
       display: flex; }
       footer div a {
         margin-bottom: 14%; } }
-
-/*# sourceMappingURL=style.css.map */

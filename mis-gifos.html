@@ -8,27 +8,32 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/glider.min.css" />
     <link rel="stylesheet" href="styles/carrusel.css">
-    <script src="js/glider.min.js"></script>
-    <script src="js/carrusel.js"></script>
     <title>MIS GIFOS</title>
 </head>
 
 <body>
-    <hr color="#572EE5" class="hrs">
+    <hr class="hrs">
     <header>
-        <a href="./index.html"><img src="assets/logo-mobile.svg" alt="logoGIFOS" id="logoGIFOS"></a>
+        <a href=""><img src="assets/logo-mobile.svg" alt="logoGIFOS" id="logoGIFOS" onclick="location.reload()"></a>
         <nav>
             <div class="menu">
                 <input type="checkbox" id="checkbox" />
                 <img src="assets/burger.svg" alt="burger" id="burgerMovil">
                 <ul>
                     <li><a href="#" id="Nocturno">Modo Nocturno</a></li>
-                    <hr color="#7B5DE3" class="hrsBurguer">
+                    <li>
+                        <hr class="hrsBurguer">
+                    </li>
                     <li><a href="./favoritos.html">Favoritos</a></li>
-                    <hr color="#7B5DE3" class="hrsBurguer">
-                    <li><a href="#">Mis GIFOS</a></li>
-                    <hr color="#7B5DE3" class="hrsBurguer">
-                    <a href="crear_gifo_1.html"><img src="assets/button-crear-gifo.svg" alt="Crear_Gifo" id="crearGIFO"></a>
+                    <li>
+                        <hr class="hrsBurguer">
+                    </li>
+                    <li><a href="./mis-gifos.html">Mis GIFOS</a></li>
+                    <li>
+                        <hr class="hrsBurguer">
+                    </li>
+                    <li id="boton-crear"><a href="/crear_gifo_1.html"><img src="assets/button-crear-gifo.svg"
+                                alt="Crear_Gifo" id="crearGIFO"></a></li>
                 </ul>
             </div>
         </nav>
@@ -55,29 +60,247 @@
             <h3>Trending GIFOS</h3>
             <p>Mira los últimos <br>
                 GIFOS de nuestra comunidad.</p>
-                <div class="glider-contain">
-                    <div class="glider">
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=1"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=2"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=3"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=4"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=5"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=6"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=7"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=8"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=9"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=10"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=11"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=12"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=13"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=14"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=15"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=16"></div>
+            <!--Carrusel inicio-->
+            <div id="carrusel">
+
+                <div class="carrusel">
+                    <div id="trending_0">
+                        <img class="trending" id="imagenTrending1" src="assets/loading.gif" alt="imagenTrending1">
+
+                        <div class="botonesImg">
+                            <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton"
+                                onclick="GuardarGIFO('imagenTrending1','userTrending1','titleTrending1')">
+                            <img src="assets/icon-download.svg" alt="descarga" class="descargaButton"
+                                onclick="descargarGIFO('imagenTrending1')">
+                            <img onclick="togglePopUp('imagenTrending1','userTrending1','titleTrending1')"
+                                src="assets/icon-max-normal.svg" alt="ImgMax">
+                        </div>
+
+                        <div class="user-title-hover">
+                            <p class="user_GIFO_trending" id="userTrending1" data-content=" ">User</p>
+                            <p class="title_GIFO_trending" id="titleTrending1" data-content=" ">Titulo</p>
+                        </div>
+
                     </div>
-                    <button class="glider-prev">&laquo;</button>
-                    <button class="glider-next">&raquo;</button>
-                    
+                    <div id="trending_1">
+
+                        <img class="trending" id="imagenTrending2" src="assets/loading.gif" alt="imagenTrending2">
+
+                        <div class="botonesImg">
+                            <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton"
+                                onclick="GuardarGIFO('imagenTrending2','userTrending2','titleTrending2')">
+                            <img src="assets/icon-download.svg" alt="descarga" class="descargaButton"
+                                onclick="descargarGIFO('imagenTrending2')">
+                            <img onclick="togglePopUp('imagenTrending2','userTrending2','titleTrending2')"
+                                src="assets/icon-max-normal.svg" alt="ImgMax">
+                        </div>
+
+                        <div class="user-title-hover">
+                            <p class="user_GIFO_trending" id="userTrending2" data-content=" ">User</p>
+                            <p class="title_GIFO_trending" id="titleTrending2" data-content=" ">Titulo</p>
+                        </div>
+
+                    </div>
+                    <div id="trending_2">
+
+                        <img class="trending" id="imagenTrending3" src="assets/loading.gif" alt="imagenTrendin3">
+
+                        <div class="botonesImg">
+                            <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton"
+                                onclick="GuardarGIFO('imagenTrending3','userTrending3','titleTrending3')">
+                            <img src="assets/icon-download.svg" alt="descarga" class="descargaButton"
+                                onclick="descargarGIFO('imagenTrending3')">
+                            <img onclick="togglePopUp('imagenTrending3','userTrending3','titleTrending3')"
+                                src="assets/icon-max-normal.svg" alt="ImgMax">
+                        </div>
+
+                        <div class="user-title-hover">
+                            <p class="user_GIFO_trending" id="userTrending3" data-content=" ">User</p>
+                            <p class="title_GIFO_trending" id="titleTrending3" data-content=" ">Titulo</p>
+                        </div>
+
+                    </div>
+                    <div id="trending_3">
+
+                        <img class="trending" id="imagenTrending4" src="assets/loading.gif" alt="imagenTrending4">
+
+                        <div class="botonesImg">
+                            <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton"
+                                onclick="GuardarGIFO('imagenTrending4','userTrending4','titleTrending4')">
+                            <img src="assets/icon-download.svg" alt="descarga" class="descargaButton"
+                                onclick="descargarGIFO('imagenTrending4')">
+                            <img onclick="togglePopUp('imagenTrending4','userTrending4','titleTrending4')"
+                                src="assets/icon-max-normal.svg" alt="ImgMax">
+                        </div>
+
+                        <div class="user-title-hover">
+                            <p class="user_GIFO_trending" id="userTrending4" data-content=" ">User</p>
+                            <p class="title_GIFO_trending" id="titleTrending4" data-content=" ">Titulo</p>
+                        </div>
+
+                    </div>
+                    <div id="trending_4">
+
+                        <img class="trending" id="imagenTrending5" src="assets/loading.gif" alt="imagenTrending5">
+
+                        <div class="botonesImg">
+                            <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton"
+                                onclick="GuardarGIFO('imagenTrending5','userTrending5','titleTrending5')">
+                            <img src="assets/icon-download.svg" alt="descarga" class="descargaButton"
+                                onclick="descargarGIFO('imagenTrending5')">
+                            <img onclick="togglePopUp('imagenTrending5','userTrending5','titleTrending5')"
+                                src="assets/icon-max-normal.svg" alt="ImgMax">
+                        </div>
+
+                        <div class="user-title-hover">
+                            <p class="user_GIFO_trending" id="userTrending5" data-content=" ">User</p>
+                            <p class="title_GIFO_trending" id="titleTrending5" data-content=" ">Titulo</p>
+                        </div>
+
+                    </div>
+                    <div id="trending_5">
+
+                        <img class="trending" id="imagenTrending6" src="assets/loading.gif" alt="imagenTrending6">
+
+                        <div class="botonesImg">
+                            <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton"
+                                onclick="GuardarGIFO('imagenTrending6','userTrending6','titleTrending6')">
+                            <img src="assets/icon-download.svg" alt="descarga" class="descargaButton"
+                                onclick="descargarGIFO('imagenTrending6')">
+                            <img onclick="togglePopUp('imagenTrending6','userTrending6','titleTrending6')"
+                                src="assets/icon-max-normal.svg" alt="ImgMax">
+                        </div>
+
+                        <div class="user-title-hover">
+                            <p class="user_GIFO_trending" id="userTrending6" data-content=" ">User</p>
+                            <p class="title_GIFO_trending" id="titleTrending6" data-content=" ">Titulo</p>
+                        </div>
+
+                    </div>
+                    <div id="trending_6">
+
+                        <img class="trending" id="imagenTrending7" src="assets/loading.gif" alt="imagenTrending7">
+
+                        <div class="botonesImg">
+                            <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton"
+                                onclick="GuardarGIFO('imagenTrending7','userTrending7','titleTrending7')">
+                            <img src="assets/icon-download.svg" alt="descarga" class="descargaButton"
+                                onclick="descargarGIFO('imagenTrending7')">
+                            <img onclick="togglePopUp('imagenTrending7','userTrending7','titleTrending7')"
+                                src="assets/icon-max-normal.svg" alt="ImgMax">
+                        </div>
+
+                        <div class="user-title-hover">
+                            <p class="user_GIFO_trending" id="userTrending7" data-content=" ">User</p>
+                            <p class="title_GIFO_trending" id="titleTrending7" data-content=" ">Titulo</p>
+                        </div>
+
+                    </div>
+                    <div id="trending_7">
+
+                        <img class="trending" id="imagenTrending8" src="assets/loading.gif" alt="imagenTrending8">
+
+                        <div class="botonesImg">
+                            <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton"
+                                onclick="GuardarGIFO('imagenTrending8','userTrending8','titleTrending8')">
+                            <img src="assets/icon-download.svg" alt="descarga" class="descargaButton"
+                                onclick="descargarGIFO('imagenTrending8')">
+                            <img onclick="togglePopUp('imagenTrending8','userTrending8','titleTrending8')"
+                                src="assets/icon-max-normal.svg" alt="ImgMax">
+                        </div>
+
+                        <div class="user-title-hover">
+                            <p class="user_GIFO_trending" id="userTrending8" data-content=" ">User</p>
+                            <p class="title_GIFO_trending" id="titleTrending8" data-content=" ">Titulo</p>
+                        </div>
+
+                    </div>
+                    <div id="trending_8">
+
+                        <img class="trending" id="imagenTrending9" src="assets/loading.gif" alt="imagenTrending9">
+
+                        <div class="botonesImg">
+                            <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton"
+                                onclick="GuardarGIFO('imagenTrending9','userTrending9','titleTrending9')">
+                            <img src="assets/icon-download.svg" alt="descarga" class="descargaButton"
+                                onclick="descargarGIFO('imagenTrending9')">
+                            <img onclick="togglePopUp('imagenTrending9','userTrending9','titleTrending9')"
+                                src="assets/icon-max-normal.svg" alt="ImgMax">
+                        </div>
+
+                        <div class="user-title-hover">
+                            <p class="user_GIFO_trending" id="userTrending9" data-content=" ">User</p>
+                            <p class="title_GIFO_trending" id="titleTrending9" data-content=" ">Titulo</p>
+                        </div>
+
+                    </div>
+                    <div id="trending_9">
+
+                        <img class="trending" id="imagenTrending10" src="http://placehold.it/300x300?text=10"
+                            alt="imagenTrending10">
+
+                        <div class="botonesImg">
+                            <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton"
+                                onclick="GuardarGIFO('imagenTrending10','userTrending10','titleTrending10')">
+                            <img src="assets/icon-download.svg" alt="descarga" class="descargaButton"
+                                onclick="descargarGIFO('imagenTrending10')">
+                            <img onclick="togglePopUp('imagenTrending10','userTrending10','titleTrending10')"
+                                src="assets/icon-max-normal.svg" alt="ImgMax">
+                        </div>
+
+                        <div class="user-title-hover">
+                            <p class="user_GIFO_trending" id="userTrending10" data-content=" ">User</p>
+                            <p class="title_GIFO_trending" id="titleTrending10" data-content=" ">Titulo</p>
+                        </div>
+
+                    </div>
+                    <div id="trending_10">
+
+                        <img class="trending" id="imagenTrending11" src="http://placehold.it/300x300?text=11"
+                            alt="imagenTrending11">
+
+                        <div class="botonesImg">
+                            <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton"
+                                onclick="GuardarGIFO('imagenTrending11','userTrending11','titleTrending11')">
+                            <img src="assets/icon-download.svg" alt="descarga" class="descargaButton"
+                                onclick="descargarGIFO('imagenTrending11')">
+                            <img onclick="togglePopUp('imagenTrending11','userTrending11','titleTrending11')"
+                                src="assets/icon-max-normal.svg" alt="ImgMax">
+                        </div>
+
+                        <div class="user-title-hover">
+                            <p class="user_GIFO_trending" id="userTrending11" data-content=" ">User</p>
+                            <p class="title_GIFO_trending" id="titleTrending11" data-content=" ">Titulo</p>
+                        </div>
+
+                    </div>
+                    <div id="trending_11">
+
+                        <img class="trending" id="imagenTrending12" src="http://placehold.it/300x300?text=12"
+                            alt="imagenTrending12">
+
+                        <div class="botonesImg">
+                            <img src="assets/icon-fav.svg" alt="favoritos" class="favoritosButton"
+                                onclick="GuardarGIFO('imagenTrending12','userTrending12','titleTrending12')">
+                            <img src="assets/icon-download.svg" alt="descarga" class="descargaButton"
+                                onclick="descargarGIFO('imagenTrending12')">
+                            <img onclick="togglePopUp('imagenTrending12','userTrending12','titleTrending12')"
+                                src="assets/icon-max-normal.svg" alt="ImgMax">
+                        </div>
+
+                        <div class="user-title-hover">
+                            <p class="user_GIFO_trending" id="userTrending12" data-content=" ">User</p>
+                            <p class="title_GIFO_trending" id="titleTrending12" data-content=" ">Titulo</p>
+                        </div>
+
+                    </div>
                 </div>
+                <a href="#" class="left-arrow"><img src="assets/button-slider-left.svg"
+                        alt="desplazar a la izquierda"></a>
+                <a href="#" class="right-arrow"><img src="assets/Button-Slider-right.svg"
+                        alt="desplazar a la derecha"></a>
+            </div>
+            <!--Carrusel FIN-->
         </section>
     </main>
     <footer>
@@ -89,10 +312,12 @@
         </div>
         <p>© GIFOS 2020 All Rights Reserved.</p>
     </footer>
-    <hr color="#572EE5" class="hrs">
+    <hr class="hrs">
+    <script src="js/mis-gifos.js"></script>
+    <script src="js/nocturno.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/trending.js"></script>
 </body>
-<script src="js/mis-gifos.js"></script>
-<script src="js/nocturno.js"></script>
-<script src="js/script.js"></script>
+
 
 </html>

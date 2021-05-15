@@ -8,10 +8,10 @@ body{
     hr{
         height: 5px;
         width: 100%;
-        color: black;
+        background-color:#572EE5;
     }
+    
 }
-
 header{
     padding: 7% 7% 0% 7%;
     display: flex;
@@ -56,6 +56,7 @@ header{
                     filter:alpha(opacity=90);
                     -moz-opacity:.90;
                     opacity:.90;
+                    background-color: #7B5DE3;
                 }
                 li{
                     position: relative;
@@ -129,7 +130,7 @@ header{
                     hr{
                         display: none;
                     }
-                    a{
+                    #boton-crear{
                         display: none;
                     }
                     li{
@@ -178,7 +179,7 @@ header{
         nav{
             .menu{
                 ul{
-                    a{
+                    #boton-crear{
                         display: block;
                     }
                 }

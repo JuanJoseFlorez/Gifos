@@ -12,21 +12,22 @@
 </head>
 
 <body>
-    <hr color="#572EE5">
+    <hr >
     <header>
-        <img src="assets/logo-mobile.svg">
+        <a href=""><img src="assets/logo-mobile.svg" alt="logoGIFOS" id="logoGIFOS" onclick="location.reload()"></a>
         <nav>
             <div class="menu">
                 <input type="checkbox" id="checkbox" />
-                <img src="assets/burger.svg" alt="burger">
+                <img src="assets/burger.svg" alt="burger" id="burgerMovil">
                 <ul>
-                    <li><a href="#">Modo Nocturno</a></li>
-                    <hr color="#7B5DE3">
-                    <li><a href="#">Favoritos</a></li>
-                    <hr color="#7B5DE3">
-                    <li><a href="mis-gifos.html">Mis GIFOS</a></li>
-                    <hr color="#7B5DE3">
-                    <a href="#"><img src="assets/CTA-crear-gifo-active.svg" alt="Crear_Gifo"></a>
+                    <li><a href="#" id="Nocturno">Modo Nocturno</a></li>
+                    <li><hr class="hrsBurguer"></li>
+                    <li><a href="./favoritos.html">Favoritos</a></li>
+                    <li><hr class="hrsBurguer"></li>
+                    <li><a href="./mis-gifos.html">Mis GIFOS</a></li>
+                    <li><hr class="hrsBurguer"></li>
+                    <li id="boton-crear"><a href="/crear_gifo_1.html"><img src="assets/button-crear-gifo.svg" alt="Crear_Gifo"
+                            id="crearGIFO"></a></li>
                 </ul>
             </div>
         </nav>
@@ -35,12 +36,12 @@
         <section id="Crear_Gifo">
             <div class="row">
             <img src="assets/camara.svg" alt="camara" class="camara mov">
-            <img src="assets/Path 2.svg" alt="Luz" class="luz camara">
+            <img src="assets/Path-2.svg" alt="Luz" class="luz camara">
             <div class="Contenedor" id="changeContenedor">
                 <h2 id="changeTitle">Aquí podrás<br> crear tus propios<span class="color"> GIFOS</span></h2>
                 <p id="changeP">¡Crea tu GIFO en sólo 3 pasos!<br>(sólo necesitas una cámara para grabar un video)</p>
                 <div class="video-wrap" id="video-camara">
-                    <video src="" id="video" playsinline autoplay></video>
+                    <video id="video" playsinline autoplay></video>
                     <div class="row" id="botones_camara">
                         <img onclick="descargarMyGIFO('urlGIFO')" src="assets/icon-download.svg" alt="">
                         <img onclick="copiarURL('urlGIFO')" id="buttonCopiar" src="assets/icon-link-normal.svg" alt="">
@@ -61,11 +62,11 @@
             <img src="assets/paso-a-paso-3.svg" alt="Three" class="pasos movp">
             <div class="mensaje-pequeño" id="number"><span>00:</span><span id="minutos">00</span><span id="segundos">:00</span></div>
             <div class="mensaje-pequeño" id="repetir">Repetir Captura</div>
-            <hr color="#572EE5" class="hr_gifos">
+            <hr class="hr_gifos">
             <a href="#"><img src="assets/CTA-comenzar.svg" alt="comenzar" class="comenzar" onclick="getStreamAndRecord()"></a>
-            <a href="#"><img src="assets/CTA-grabar.svg" class="grabar" style="display: none" onclick="iniciarGrabacion()"></a>
-            <a href="#"><img src="assets/CTA-finalizar.svg" class="finalizar" style="display: none" onclick="detenerGrabacion()"></a>
-            <a href="#"><img src="assets/CTA-subir-gifo.svg" class="subir-gifo" style="display: none;"></a>
+            <a href="#"><img src="assets/CTA-grabar.svg" alt="grabar" class="grabar" style="display: none" onclick="iniciarGrabacion()"></a>
+            <a href="#"><img src="assets/CTA-finalizar.svg" alt="finalizar" class="finalizar" style="display: none" onclick="detenerGrabacion()"></a>
+            <a href="#"><img src="assets/CTA-subir-gifo.svg" alt="subir Gifo" class="subir-gifo" style="display: none;"></a>
         </section>
 
     </main>
@@ -78,7 +79,7 @@
         </div>
         <p>© GIFOS 2020 All Rights Reserved.</p>
     </footer>
-    <hr color="#572EE5">
+    <hr>
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
     <script src="js/crearGIFO.js"></script>
 </body>

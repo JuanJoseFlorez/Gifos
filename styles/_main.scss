@@ -160,6 +160,7 @@ main {
             text-align: center;
             display: flex;
             opacity: 0.5;
+            background-color: #9CAFC3;
         }
     }
     #Busqueda {
@@ -316,6 +317,7 @@ main {
             text-align: center;
             display: flex;
             opacity: 0.5;
+            background-color:#9CAFC3;
         }
 
         #casilla-busqueda {
@@ -1005,7 +1007,7 @@ main {
                 .contenedor {
                     padding-left: unset;
                     position: relative;
-                    wi img {
+                    img {
                         height: 250px;
                     }
                     .botonesImg {
@@ -1291,6 +1293,7 @@ main {
                 border-radius: 10px;
                 margin: auto;
                 margin-top: 1%;
+                background-color: #572EE5;
             }
         }
     }
