@@ -8,10 +8,9 @@ let dataTitle = JSON.parse(localStorage.getItem("titleFav"));
 window.onload = listarFavoritos();
 
 function listarFavoritos() {
-    console.log(dataUrl.length);
-
     if(dataUrl == null || dataUrl.length == 0){
         sin_favoritos.style.display = "flex";
+        ver_mas.style.display = "none";
     }
 
     if(dataUrl.length < 13){
