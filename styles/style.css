@@ -122,6 +122,8 @@ header {
         height: unset; }
         header nav .menu ul hr {
           display: none; }
+        header nav .menu ul a {
+          display: none; }
         header nav .menu ul li {
           width: unset;
           padding: unset;
@@ -146,6 +148,9 @@ header {
         display: none; }
       header nav .menu img {
         display: none; } }
+@media screen and (min-width: 1200px) {
+  header nav .menu ul a {
+    display: block; } }
 :root {
   --purple-gifos: #572ee5;
   --purple-movile: #572ee5;
@@ -815,144 +820,6 @@ main {
     margin-bottom: 3%;
     margin-top: 5%;
     align-self: center; }
-  main #Crear_Gifo {
-    width: 100%;
-    height: auto;
-    text-align: center; }
-    main #Crear_Gifo .row {
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-      main #Crear_Gifo .row .Contenedor {
-        width: auto;
-        height: auto;
-        border: 1px solid var(--purple-gifos);
-        padding: 5% 15%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; }
-        main #Crear_Gifo .row .Contenedor .tamaño {
-          width: 27px;
-          height: 25px; }
-        main #Crear_Gifo .row .Contenedor .linea1 {
-          display: flex;
-          border-left: 3px solid #50E3C2;
-          border-top: 3px solid #50E3C2; }
-        main #Crear_Gifo .row .Contenedor .linea2 {
-          display: flex;
-          margin-left: 90%;
-          border-top: 3px solid #50E3C2;
-          border-right: 3px solid #50E3C2; }
-        main #Crear_Gifo .row .Contenedor .linea3 {
-          display: flex;
-          margin-top: 30%;
-          border-left: 3px solid #50E3C2;
-          border-bottom: 3px solid #50E3C2; }
-        main #Crear_Gifo .row .Contenedor .linea4 {
-          display: flex;
-          margin-left: 90%;
-          margin-top: 30%;
-          border-right: 3px solid #50E3C2;
-          border-bottom: 3px solid #50E3C2; }
-        main #Crear_Gifo .row .Contenedor h2 {
-          text-align: center;
-          color: var(--purple-gifos); }
-        main #Crear_Gifo .row .Contenedor .color {
-          color: #50E3C2; }
-        main #Crear_Gifo .row .Contenedor p {
-          text-align: center; }
-        main #Crear_Gifo .row .Contenedor #video-camara {
-          position: relative;
-          display: none;
-          width: 100%; }
-          main #Crear_Gifo .row .Contenedor #video-camara > video {
-            width: 100%;
-            height: 100%; }
-          main #Crear_Gifo .row .Contenedor #video-camara > p {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            right: 0;
-            color: white;
-            font-size: 1em;
-            display: none; }
-          main #Crear_Gifo .row .Contenedor #video-camara > img {
-            position: absolute;
-            top: 40%;
-            margin-top: -10px;
-            left: 50%;
-            margin-left: -15px;
-            width: 30px;
-            display: none; }
-          main #Crear_Gifo .row .Contenedor #video-camara #botones_camara {
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            display: none; }
-            main #Crear_Gifo .row .Contenedor #video-camara #botones_camara > img {
-              padding: 5%;
-              width: 30px;
-              cursor: pointer; }
-            main #Crear_Gifo .row .Contenedor #video-camara #botones_camara #urlGIFO {
-              display: none; }
-      main #Crear_Gifo .row .luz {
-        width: 65px;
-        padding: 0;
-        margin-left: 0; }
-      main #Crear_Gifo .row .camara {
-        margin: 0;
-        padding: 0; }
-      main #Crear_Gifo .row .pelicula {
-        margin-left: 4%;
-        margin-top: 17%; }
-    main #Crear_Gifo .mov {
-      margin-left: 15%; }
-    main #Crear_Gifo .mensaje-pequeño {
-      width: 200px;
-      height: auto;
-      font-size: 1em;
-      color: #572EE5;
-      position: relative;
-      top: -30px;
-      left: 65%;
-      display: none; }
-    main #Crear_Gifo #repetir {
-      cursor: pointer; }
-    main #Crear_Gifo .pasos {
-      width: 32px;
-      justify-content: center;
-      margin-top: 1%; }
-    main #Crear_Gifo img {
-      width: 110px; }
-    main #Crear_Gifo .create {
-      margin-top: 440px;
-      margin-left: -440px;
-      margin-top: 1%; }
-      main #Crear_Gifo .create:hover {
-        content: url("../assets/CTA-comenzar-hover.svg"); }
-    main #Crear_Gifo .grabar {
-      margin: auto;
-      margin-top: 1%; }
-      main #Crear_Gifo .grabar:hover {
-        content: url("../assets/CTA-grabar-hover.svg"); }
-    main #Crear_Gifo .finalizar {
-      margin: auto;
-      margin-top: 1%; }
-      main #Crear_Gifo .finalizar:hover {
-        content: url("../assets/CTA-finalizar-hover.svg"); }
-    main #Crear_Gifo .subir-gifo {
-      margin: auto;
-      margin-top: 1%; }
-      main #Crear_Gifo .subir-gifo:hover {
-        content: url("../assets/CTA-subir-gifo-hover.svg"); }
-    main #Crear_Gifo .comenzar {
-      margin-top: 1%; }
-    main #Crear_Gifo .hr_gifos {
-      width: 60%;
-      height: 7px;
-      border-radius: 10px;
-      margin: auto;
-      margin-top: 1%; }
   main #inchange h3 {
     padding-top: unset;
     margin-top: 5%; }
@@ -1121,7 +988,145 @@ main {
     height: 450px;
     width: 30%; }
   main #gif-max {
-    width: 30%; } }
+    width: 30%; }
+  main #Crear_Gifo {
+    width: 100%;
+    height: auto;
+    text-align: center; }
+    main #Crear_Gifo .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      main #Crear_Gifo .row .Contenedor {
+        width: auto;
+        height: auto;
+        border: 1px solid var(--purple-gifos);
+        padding: 5% 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        main #Crear_Gifo .row .Contenedor .tamaño {
+          width: 27px;
+          height: 25px; }
+        main #Crear_Gifo .row .Contenedor .linea1 {
+          display: flex;
+          border-left: 3px solid #50E3C2;
+          border-top: 3px solid #50E3C2; }
+        main #Crear_Gifo .row .Contenedor .linea2 {
+          display: flex;
+          margin-left: 90%;
+          border-top: 3px solid #50E3C2;
+          border-right: 3px solid #50E3C2; }
+        main #Crear_Gifo .row .Contenedor .linea3 {
+          display: flex;
+          margin-top: 30%;
+          border-left: 3px solid #50E3C2;
+          border-bottom: 3px solid #50E3C2; }
+        main #Crear_Gifo .row .Contenedor .linea4 {
+          display: flex;
+          margin-left: 90%;
+          margin-top: 30%;
+          border-right: 3px solid #50E3C2;
+          border-bottom: 3px solid #50E3C2; }
+        main #Crear_Gifo .row .Contenedor h2 {
+          text-align: center;
+          color: var(--purple-gifos); }
+        main #Crear_Gifo .row .Contenedor .color {
+          color: #50E3C2; }
+        main #Crear_Gifo .row .Contenedor p {
+          text-align: center; }
+        main #Crear_Gifo .row .Contenedor #video-camara {
+          position: relative;
+          display: none;
+          width: 100%; }
+          main #Crear_Gifo .row .Contenedor #video-camara > video {
+            width: 100%;
+            height: 100%; }
+          main #Crear_Gifo .row .Contenedor #video-camara > p {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            color: white;
+            font-size: 1em;
+            display: none; }
+          main #Crear_Gifo .row .Contenedor #video-camara > img {
+            position: absolute;
+            top: 40%;
+            margin-top: -10px;
+            left: 50%;
+            margin-left: -15px;
+            width: 30px;
+            display: none; }
+          main #Crear_Gifo .row .Contenedor #video-camara #botones_camara {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            display: none; }
+            main #Crear_Gifo .row .Contenedor #video-camara #botones_camara > img {
+              padding: 5%;
+              width: 30px;
+              cursor: pointer; }
+            main #Crear_Gifo .row .Contenedor #video-camara #botones_camara #urlGIFO {
+              display: none; }
+      main #Crear_Gifo .row .luz {
+        width: 65px;
+        padding: 0;
+        margin-left: 0; }
+      main #Crear_Gifo .row .camara {
+        margin: 0;
+        padding: 0; }
+      main #Crear_Gifo .row .pelicula {
+        margin-left: 4%;
+        margin-top: 17%; }
+    main #Crear_Gifo .mov {
+      margin-left: 15%; }
+    main #Crear_Gifo .mensaje-pequeño {
+      width: 200px;
+      height: auto;
+      font-size: 1em;
+      color: #572EE5;
+      position: relative;
+      top: -30px;
+      left: 65%;
+      display: none; }
+    main #Crear_Gifo #repetir {
+      cursor: pointer; }
+    main #Crear_Gifo .pasos {
+      width: 32px;
+      justify-content: center;
+      margin-top: 1%; }
+    main #Crear_Gifo img {
+      width: 110px; }
+    main #Crear_Gifo .create {
+      margin-top: 440px;
+      margin-left: -440px;
+      margin-top: 1%; }
+      main #Crear_Gifo .create:hover {
+        content: url("../assets/CTA-comenzar-hover.svg"); }
+    main #Crear_Gifo .grabar {
+      margin: auto;
+      margin-top: 1%; }
+      main #Crear_Gifo .grabar:hover {
+        content: url("../assets/CTA-grabar-hover.svg"); }
+    main #Crear_Gifo .finalizar {
+      margin: auto;
+      margin-top: 1%; }
+      main #Crear_Gifo .finalizar:hover {
+        content: url("../assets/CTA-finalizar-hover.svg"); }
+    main #Crear_Gifo .subir-gifo {
+      margin: auto;
+      margin-top: 1%; }
+      main #Crear_Gifo .subir-gifo:hover {
+        content: url("../assets/CTA-subir-gifo-hover.svg"); }
+    main #Crear_Gifo .comenzar {
+      margin-top: 1%; }
+    main #Crear_Gifo .hr_gifos {
+      width: 60%;
+      height: 7px;
+      border-radius: 10px;
+      margin: auto;
+      margin-top: 1%; } }
 :root {
   --color-p: black; }
 
@@ -1156,5 +1161,3 @@ footer {
       display: flex; }
       footer div a {
         margin-bottom: 14%; } }
-
-/*# sourceMappingURL=style.css.map */

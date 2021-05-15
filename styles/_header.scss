@@ -129,6 +129,9 @@ header{
                     hr{
                         display: none;
                     }
+                    a{
+                        display: none;
+                    }
                     li{
                         
                         width: unset;
@@ -157,6 +160,7 @@ header{
                             content: url("../assets/CTA-crear-gifo-hover.svg");
                         }
                     }
+                    
                 }
                 input{
                     display: none;
@@ -164,6 +168,19 @@ header{
                 img{
                     
                     display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px){
+    header{
+        nav{
+            .menu{
+                ul{
+                    a{
+                        display: block;
+                    }
                 }
             }
         }

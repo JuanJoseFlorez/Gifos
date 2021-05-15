@@ -858,183 +858,7 @@ main {
                 align-self: center;
             }
         }
-        #Crear_Gifo {
-            width: 100%;
-            height: auto;
-            text-align: center;
-            .row {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                .Contenedor {
-                    width: auto;
-                    height: auto;
-                    border: 1px solid var(--purple-gifos);
-                    padding: 5% 15%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-
-                    .tamaño {
-                        width: 27px;
-                        height: 25px;
-                    }
-                    .linea1 {
-                        display: flex;
-                        border-left: 3px solid $green-gifos;
-                        border-top: 3px solid $green-gifos;
-                    }
-                    .linea2 {
-                        display: flex;
-                        margin-left: 90%;
-                        border-top: 3px solid $green-gifos;
-                        border-right: 3px solid $green-gifos;
-                    }
-                    .linea3 {
-                        display: flex;
-                        margin-top: 30%;
-                        border-left: 3px solid $green-gifos;
-                        border-bottom: 3px solid $green-gifos;
-                    }
-                    .linea4 {
-                        display: flex;
-                        margin-left: 90%;
-                        margin-top: 30%;
-                        border-right: 3px solid $green-gifos;
-                        border-bottom: 3px solid $green-gifos;
-                    }
-                    h2 {
-                        text-align: center;
-                        color: var(--purple-gifos);
-                    }
-                    .color {
-                        color: $green-gifos;
-                    }
-                    p {
-                        text-align: center;
-                    }
-                    #video-camara{
-                        position: relative;
-                        display: none;
-                        width: 100%;
-                        &>video{
-                            width: 100%;
-                            height: 100%;
-                        }
-                        &>p{
-                            position: absolute;
-                            top: 50%;
-                            left: 0;
-                            right: 0;
-                            color: white;
-                            font-size: 1em;
-                            display: none;
-                        }
-                        &>img{
-                            position: absolute;
-                            top: 40%;
-                            margin-top: -10px;
-                            left: 50%;
-                            margin-left: -15px;
-                            width: 30px;
-                            display: none;
-                        }
-                        #botones_camara{
-                            position: absolute;
-                            top: 5px;
-                            right: 5px;
-                            display: none;
-                            &>img{
-                                padding:5%;
-                                width: 30px;
-                                cursor: pointer;
-                            }
-                            #urlGIFO{
-                                display: none;
-                            }
-                        }
-                    }
-                }
-                .luz {
-                    width: 65px;
-                    padding: 0;
-                    margin-left: 0;
-                }
-                .camara {
-                    margin: 0;
-                    padding: 0;
-                }
-                .pelicula {
-                    margin-left: 4%;
-                    margin-top: 17%;
-                }
-                
-            }
-            .mov {
-                margin-left: 15%;
-            }
-            .mensaje-pequeño {
-                width: 200px;
-                height: auto;
-                font-size:1em;
-                color:$purple-gifos;
-                position: relative;
-                top: -30px;
-                left: 65%;
-                display: none;
-              }
-              #repetir{
-                  cursor: pointer;
-              }
-            .pasos {
-                width: 32px;
-                justify-content: center;
-                margin-top: 1%;
-            }
-            img {
-                width: 110px;
-            }
-            .create {
-                margin-top: 440px;
-                margin-left: -440px;
-                margin-top: 1%;
-                &:hover {
-                    content: url("../assets/CTA-comenzar-hover.svg");
-                }
-            }
-            .grabar {
-                margin: auto;
-                margin-top: 1%;
-                
-                &:hover {
-                    content: url("../assets/CTA-grabar-hover.svg");
-                }
-            }
-            .finalizar {
-                margin: auto;
-                margin-top: 1%;
-                &:hover {
-                    content: url("../assets/CTA-finalizar-hover.svg");
-                }
-            }
-            .subir-gifo {
-                margin: auto;
-                margin-top: 1%;
-                &:hover {
-                    content: url("../assets/CTA-subir-gifo-hover.svg");
-                }
-            }
-            .comenzar{
-                margin-top: 1%;
-            }
-            .hr_gifos {
-                width: 60%;
-                height: 7px;
-                border-radius: 10px;
-                margin: auto;
-                margin-top: 1%;
-            }
-        }
+        
 
         #inchange {
             h3 {
@@ -1291,6 +1115,183 @@ main {
         }
         #gif-max {
             width: 30%;
+        }
+        #Crear_Gifo {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            .row {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .Contenedor {
+                    width: auto;
+                    height: auto;
+                    border: 1px solid var(--purple-gifos);
+                    padding: 5% 15%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .tamaño {
+                        width: 27px;
+                        height: 25px;
+                    }
+                    .linea1 {
+                        display: flex;
+                        border-left: 3px solid $green-gifos;
+                        border-top: 3px solid $green-gifos;
+                    }
+                    .linea2 {
+                        display: flex;
+                        margin-left: 90%;
+                        border-top: 3px solid $green-gifos;
+                        border-right: 3px solid $green-gifos;
+                    }
+                    .linea3 {
+                        display: flex;
+                        margin-top: 30%;
+                        border-left: 3px solid $green-gifos;
+                        border-bottom: 3px solid $green-gifos;
+                    }
+                    .linea4 {
+                        display: flex;
+                        margin-left: 90%;
+                        margin-top: 30%;
+                        border-right: 3px solid $green-gifos;
+                        border-bottom: 3px solid $green-gifos;
+                    }
+                    h2 {
+                        text-align: center;
+                        color: var(--purple-gifos);
+                    }
+                    .color {
+                        color: $green-gifos;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                    #video-camara{
+                        position: relative;
+                        display: none;
+                        width: 100%;
+                        &>video{
+                            width: 100%;
+                            height: 100%;
+                        }
+                        &>p{
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            right: 0;
+                            color: white;
+                            font-size: 1em;
+                            display: none;
+                        }
+                        &>img{
+                            position: absolute;
+                            top: 40%;
+                            margin-top: -10px;
+                            left: 50%;
+                            margin-left: -15px;
+                            width: 30px;
+                            display: none;
+                        }
+                        #botones_camara{
+                            position: absolute;
+                            top: 5px;
+                            right: 5px;
+                            display: none;
+                            &>img{
+                                padding:5%;
+                                width: 30px;
+                                cursor: pointer;
+                            }
+                            #urlGIFO{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .luz {
+                    width: 65px;
+                    padding: 0;
+                    margin-left: 0;
+                }
+                .camara {
+                    margin: 0;
+                    padding: 0;
+                }
+                .pelicula {
+                    margin-left: 4%;
+                    margin-top: 17%;
+                }
+                
+            }
+            .mov {
+                margin-left: 15%;
+            }
+            .mensaje-pequeño {
+                width: 200px;
+                height: auto;
+                font-size:1em;
+                color:$purple-gifos;
+                position: relative;
+                top: -30px;
+                left: 65%;
+                display: none;
+              }
+              #repetir{
+                  cursor: pointer;
+              }
+            .pasos {
+                width: 32px;
+                justify-content: center;
+                margin-top: 1%;
+            }
+            img {
+                width: 110px;
+            }
+            .create {
+                margin-top: 440px;
+                margin-left: -440px;
+                margin-top: 1%;
+                &:hover {
+                    content: url("../assets/CTA-comenzar-hover.svg");
+                }
+            }
+            .grabar {
+                margin: auto;
+                margin-top: 1%;
+                
+                &:hover {
+                    content: url("../assets/CTA-grabar-hover.svg");
+                }
+            }
+            .finalizar {
+                margin: auto;
+                margin-top: 1%;
+                &:hover {
+                    content: url("../assets/CTA-finalizar-hover.svg");
+                }
+            }
+            .subir-gifo {
+                margin: auto;
+                margin-top: 1%;
+                &:hover {
+                    content: url("../assets/CTA-subir-gifo-hover.svg");
+                }
+            }
+            .comenzar{
+                margin-top: 1%;
+            }
+            .hr_gifos {
+                width: 60%;
+                height: 7px;
+                border-radius: 10px;
+                margin: auto;
+                margin-top: 1%;
+            }
         }
     }
 }
